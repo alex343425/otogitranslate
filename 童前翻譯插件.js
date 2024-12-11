@@ -39,11 +39,9 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MAdults/"+lastPartOfUrl+".json";
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MAdults/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
                         // 加入時間戳參數以避免快取
-                        const timestamp = new Date().getTime();
-                        const noCacheUrl = `${translationJsonUrl}?_=${timestamp}`;
-                        const translationData = loadTranslationJsonSync(noCacheUrl);
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
 
                         if (translationData) {
                             originalJson = replaceUsingTranslation(originalJson, translationData);
@@ -68,10 +66,8 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+lastPartOfUrl+".json";
-                        const timestamp = new Date().getTime();
-                        const noCacheUrl = `${translationJsonUrl}?_=${timestamp}`;
-                        const translationData = loadTranslationJsonSync(noCacheUrl);
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
 
                         if (translationData) {
                             originalJson = replaceUsingTranslation(originalJson, translationData);
@@ -97,10 +93,8 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/Mstory/"+lastPartOfUrl+".json";
-                        const timestamp = new Date().getTime();
-                        const noCacheUrl = `${translationJsonUrl}?_=${timestamp}`;
-                        const translationData = loadTranslationJsonSync(noCacheUrl);
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/Mstory/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
 
                         if (translationData) {
                             originalJson = replaceUsingTranslation(originalJson, translationData);
