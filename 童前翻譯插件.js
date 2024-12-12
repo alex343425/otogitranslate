@@ -7,6 +7,14 @@
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
+// 0 = 使用繁體字， 1 = 使用簡體字
+const SimplifiedChinese = 1
+//
+
+var gb_text=""
+if (SimplifiedChinese == 1){
+    gb_text="_gb"}
+
 (function () {
     const open = XMLHttpRequest.prototype.open;
     const send = XMLHttpRequest.prototype.send;
@@ -39,7 +47,7 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MAdults/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MAdults/"+lastPartOfUrl+gb_text+".json?t="+ new Date().getTime();;
                         // 加入時間戳參數以避免快取
                         const translationData = loadTranslationJsonSync(translationJsonUrl);
 
@@ -66,7 +74,7 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+lastPartOfUrl+gb_text+".json?t="+ new Date().getTime();;
                         const translationData = loadTranslationJsonSync(translationJsonUrl);
 
                         if (translationData) {
@@ -93,7 +101,7 @@
                     try {
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/Mstory/"+lastPartOfUrl+".json?t="+ new Date().getTime();;
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/Mstory/"+lastPartOfUrl+gb_text+".json?t="+ new Date().getTime();;
                         const translationData = loadTranslationJsonSync(translationJsonUrl);
 
                         if (translationData) {
