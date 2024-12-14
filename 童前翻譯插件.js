@@ -119,6 +119,81 @@ if (SimplifiedChinese == 1){
                     }
                 }
             }
+			else if(this.readyState === 4 && this._interceptedUrl.includes("api/episode/monsters")){
+                if (this.responseType === "arraybuffer") {
+                    const textDecoder = new TextDecoder();
+                    const textEncoder = new TextEncoder();
+
+                    try {
+                        const originalText = textDecoder.decode(this.response);
+                        let originalJson = JSON.parse(originalText);
+                        const MSceneId = originalJson["Episodes"][0]["MSceneId"];
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+MSceneId+gb_text+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
+                        if (translationData) {
+                            originalJson["Episodes"][0]["Title"] = '[翻譯]' + originalJson["Episodes"][0]["Title"];
+                            console.log("[拦截] 已確認該頁面有翻譯檔案");
+                        } else {
+                            console.warn("[拦截] 未加载到译文 JSON，跳过替换。");
+                        }
+                        const modifiedText = JSON.stringify(originalJson);
+                        const modifiedArrayBuffer = textEncoder.encode(modifiedText).buffer;
+                        Object.defineProperty(this, "response", { value: modifiedArrayBuffer });
+                    } catch (e) {
+                        console.error("[拦截] ArrayBuffer 转换或 JSON 解析失败：", e);
+                    }
+                }
+            }
+            else if(this.readyState === 4 && this._interceptedUrl.includes("api/Episode/WorldStories") ){
+                if (this.responseType === "arraybuffer") {
+                    const textDecoder = new TextDecoder();
+                    const textEncoder = new TextEncoder();
+
+                    try {
+                        const originalText = textDecoder.decode(this.response);
+                        let originalJson = JSON.parse(originalText);
+                        const MStoryId = originalJson[0]["MStoryId"];
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/Mstory/"+MStoryId+gb_text+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
+                        if (translationData) {
+                            originalJson[0]["Title"] = '[翻譯]' + originalJson[0]["Title"];
+                            console.log("[拦截] 已確認該頁面有翻譯檔案");
+                        } else {
+                            console.warn("[拦截] 未加载到译文 JSON，跳过替换。");
+                        }
+                        const modifiedText = JSON.stringify(originalJson);
+                        const modifiedArrayBuffer = textEncoder.encode(modifiedText).buffer;
+                        Object.defineProperty(this, "response", { value: modifiedArrayBuffer });
+                    } catch (e) {
+                        console.error("[拦截] ArrayBuffer 转换或 JSON 解析失败：", e);
+                    }
+                }
+            }
+            else if(this.readyState === 4 && this._interceptedUrl.includes("api/UAdventures/SideStories") ){
+                if (this.responseType === "arraybuffer") {
+                    const textDecoder = new TextDecoder();
+                    const textEncoder = new TextEncoder();
+
+                    try {
+                        const originalText = textDecoder.decode(this.response);
+                        let originalJson = JSON.parse(originalText);
+                        const MSceneId = originalJson[0]["Adventures"][0]["MSceneId"];
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+MSceneId+gb_text+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
+                        if (translationData) {
+                            originalJson[0]["Adventures"][0]["Name"] = '[翻譯]' + originalJson[0]["Adventures"][0]["Name"];
+                            console.log("[拦截] 已確認該頁面有翻譯檔案");
+                        } else {
+                            console.warn("[拦截] 未加载到译文 JSON，跳过替换。");
+                        }
+                        const modifiedText = JSON.stringify(originalJson);
+                        const modifiedArrayBuffer = textEncoder.encode(modifiedText).buffer;
+                        Object.defineProperty(this, "response", { value: modifiedArrayBuffer });
+                    } catch (e) {
+                        console.error("[拦截] ArrayBuffer 转换或 JSON 解析失败：", e);
+                    }
+                }
+            }
         });
         return send.apply(this, arguments);
     };
