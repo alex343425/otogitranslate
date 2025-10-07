@@ -1,15 +1,17 @@
 // ==UserScript==
-// @name         童话翻译V2
-// @version      1.0
+// @name         童话翻译V3
+// @version      1.1
 // @description  拦截指定路径的请求，修改内容并返回
 // @author       红凯
 // @match        https://otogi-rest.otogi-frontier.com/*
 // @grant        GM_xmlhttpRequest
+// @require      https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
 // ==/UserScript==
 
 // 0 = 使用繁體字， 1 = 使用簡體字
 const SimplifiedChinese = 1
-//
+// 0 = 不使用角色翻譯， 1 = 使用角色翻譯
+const CharChinese = 0
 
 var gb_text=""
 if (SimplifiedChinese == 1){
@@ -194,6 +196,35 @@ if (SimplifiedChinese == 1){
                     }
                 }
             }
+            else if(this.readyState === 4 && (this._interceptedUrl.includes("MasterData/MMonsters.gz")||this._interceptedUrl.includes("MasterData/MSpirits.gz")) && CharChinese == 1 ){
+                if (this.responseType === "arraybuffer") {
+                    const textDecoder = new TextDecoder();
+                    const textEncoder = new TextEncoder();
+                    try {
+                        const originalGzip = new Uint8Array(this.response);
+                        const decompressed = pako.ungzip(originalGzip, { to: 'string' });
+                        let monstersData = JSON.parse(decompressed);
+
+                        const translationData = loadTranslationJsonSync("https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/trans_dict.json?t="+ new Date().getTime());
+
+                        if (translationData) {
+                            monstersData = monstersData.map(monster => {
+                                if (translationData[monster.n]) {
+                                    monster.n = translationData[monster.n];
+                                }
+                                return monster;
+                            });
+                        }
+
+                        const modifiedJson = JSON.stringify(monstersData);
+                        const compressed = pako.gzip(modifiedJson);
+                        Object.defineProperty(this, "response", { value: compressed.buffer });
+                        console.log("[拦截] 已修改 MMonsters.gz 并返回。");
+                    } catch (e) {
+                        console.error("[拦截] 处理 MMonsters.gz 失败：", e);
+                    }
+                }
+            }
         });
         return send.apply(this, arguments);
     };
@@ -205,7 +236,8 @@ if (SimplifiedChinese == 1){
             xhr.send();
             if (xhr.status >= 200 && xhr.status < 300) {
                 console.log("[拦截] 同步加载译文 JSON 成功：", url);
-                return JSON.parse(xhr.responseText);
+                const jsonText = xhr.responseText.replace(/^\uFEFF/, ""); // 去除 BOM
+                return JSON.parse(jsonText);
             } else {
                 console.error(`[拦截] 同步加载译文 JSON 失败，HTTP 状态码：${xhr.status}`);
                 return null;
