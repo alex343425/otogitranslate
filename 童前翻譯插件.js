@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         童话翻译V3
-// @version      1.1
+// @name         童话翻译V4
+// @version      1.2
 // @description  拦截指定路径的请求，修改内容并返回
 // @author       红凯
 // @match        https://otogi-rest.otogi-frontier.com/*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 // 0 = 使用繁體字， 1 = 使用簡體字
-const SimplifiedChinese = 1
+const SimplifiedChinese = 0
 // 0 = 不使用角色翻譯， 1 = 使用角色翻譯
 const CharChinese = 0
 
@@ -180,7 +180,7 @@ if (SimplifiedChinese == 1){
                         const originalText = textDecoder.decode(this.response);
                         let originalJson = JSON.parse(originalText);
                         const MSceneId = originalJson[0]["Adventures"][0]["MSceneId"];
-                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/MScenes/"+MSceneId+gb_text+".json?t="+ new Date().getTime();;
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/EventVoice/"+MSceneId+gb_text+".json?t="+ new Date().getTime();;
                         const translationData = loadTranslationJsonSync(translationJsonUrl);
                         if (translationData) {
                             originalJson[0]["Adventures"][0]["Name"] = '[翻譯]' + originalJson[0]["Adventures"][0]["Name"];
@@ -191,6 +191,33 @@ if (SimplifiedChinese == 1){
                         const modifiedText = JSON.stringify(originalJson);
                         const modifiedArrayBuffer = textEncoder.encode(modifiedText).buffer;
                         Object.defineProperty(this, "response", { value: modifiedArrayBuffer });
+                    } catch (e) {
+                        console.error("[拦截] ArrayBuffer 转换或 JSON 解析失败：", e);
+                    }
+                }
+            }
+			else if(this.readyState === 4 && this._interceptedUrl.includes("api/EventVoice/Worlds")){
+                const lastPartOfUrl = this._interceptedUrl.split("/").pop();
+                if (this.responseType === "arraybuffer") {
+                    const textDecoder = new TextDecoder();
+                    const textEncoder = new TextEncoder();
+
+                    try {
+                        const originalText = textDecoder.decode(this.response);
+                        let originalJson = JSON.parse(originalText);
+                        const translationJsonUrl = "https://raw.githubusercontent.com/alex343425/otogitranslate/refs/heads/main/EventVoice/"+lastPartOfUrl+gb_text+".json?t="+ new Date().getTime();;
+                        const translationData = loadTranslationJsonSync(translationJsonUrl);
+
+                        if (translationData) {
+                            originalJson = replaceUsingTranslation(originalJson, translationData);
+                        } else {
+                            console.warn("[拦截] 未加载到译文 JSON，跳过替换。");
+                        }
+                        const modifiedText = JSON.stringify(originalJson);
+                        const modifiedArrayBuffer = textEncoder.encode(modifiedText).buffer;
+                        Object.defineProperty(this, "response", { value: modifiedArrayBuffer });
+                        console.log("[拦截] 替换后的 ArrayBuffer 响应已返回给页面。");
+
                     } catch (e) {
                         console.error("[拦截] ArrayBuffer 转换或 JSON 解析失败：", e);
                     }
@@ -270,31 +297,39 @@ if (SimplifiedChinese == 1){
         xhrFont.send();
     }
 
-	function replaceUsingTranslation(data, translationDict) {
-		// 先进行 `%user_name` 的替换
-		if (typeof data === "string") {
-			// 如果字符串包含 "%user_name"，先替换成 "人間さん"
-			data = data.replace(/%user_name/g, "人間さん");
-			data = data.replace(/人間さん先生/g, "人間さん");
-			data = data.replace(/人間さんさん/g, "人間さん");
-            data = data.replace(/\\n/g,' ')
+function replaceUsingTranslation(data, translationDict) {
+        // --- 第一階段：預處理 (為了匹配字典) ---
+        if (typeof data === "string") {
+            // 保留原始功能：將原文中的變數轉為特定稱呼以利字典比對
+            data = data.replace(/%user_name/g, "人間さん");
+            data = data.replace(/人間さん先生/g, "人間さん");
+            data = data.replace(/人間さんさん/g, "人間さん");
+            data = data.replace(/\\n/g, ' ');
+        }
 
-		}
+        // --- 第二階段：執行翻譯比對 ---
+        let result = data;
+        if (typeof data === "string" && translationDict[data]) {
+            result = translationDict[data]; // 取得譯文
+        } else if (Array.isArray(data)) {
+            return data.map((item) => replaceUsingTranslation(item, translationDict));
+        } else if (typeof data === "object" && data !== null) {
+            const newData = {};
+            for (const key in data) {
+                newData[key] = replaceUsingTranslation(data[key], translationDict);
+            }
+            return newData;
+        }
 
+        // --- 第三階段：後處理 (確保遊戲內顯示變數) ---
+        // 在這裡把所有翻譯後的稱呼，全部替換回 %user_name
+        if (typeof result === "string") {
+            result = result.replace(/人類君/g, "%user_name");
+            result = result.replace(/人間君/g, "%user_name");
+            result = result.replace(/人类君/g, "%user_name");
+            result = result.replace(/人间君/g, "%user_name");
+        }
 
-		// 现在再检查是否可以从 translationDict 中替换
-		if (typeof data === "string" && translationDict[data]) {
-			return translationDict[data]; // 替换为译文 JSON 中的对应值
-		} else if (Array.isArray(data)) {
-			return data.map((item) => replaceUsingTranslation(item, translationDict));
-		} else if (typeof data === "object" && data !== null) {
-			const newData = {};
-			for (const key in data) {
-				newData[key] = replaceUsingTranslation(data[key], translationDict);
-			}
-			return newData;
-		}
-		return data;
-	}
-
+        return result;
+    }
 })();
