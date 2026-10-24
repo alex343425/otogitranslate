@@ -1,0 +1,96 @@
+{
+  "童話翻譯插件20261008.js": {
+    "sha256": "eb218d3ada9aed9750c01c53b85166dabe620e86bf71eae261dbc9e8e6ec7bb6",
+    "bytes": 25521
+  },
+  "skill_translation/manage.mjs": {
+    "sha256": "d86766751604466d85934fe48a43c9c94aec8a9d7b7ab992f312b181f6ea5284",
+    "bytes": 18120
+  },
+  "skill_translation/runtime.cjs": {
+    "sha256": "52e8166017b9fb516927009fabeebfd2caa146fa69f6e92be22c5bd9d1b32511",
+    "bytes": 3203
+  },
+  "skill_translation/integrate.mjs": {
+    "sha256": "4d2f32e9afb1fba0d9884cbbfbbbe5b550067f9db0fa0f886d30c51f2b1d12ee",
+    "bytes": 5821
+  },
+  "skill_translation/README.md": {
+    "sha256": "18fe71e5396c6b2942d6e07479ef3990a29c44cafce41f5ee5ae2568323a49bb",
+    "bytes": 8015
+  },
+  "skill_translation/pending.jsonl": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "skill_translation/source/current.json": {
+    "sha256": "dcb88b62e83299235a9724ce0dbfeddf7aa0a9b6a7546e40ff53e95f1475cc30",
+    "bytes": 1319
+  },
+  "skill_translation/translations/templates.zh-TW.json": {
+    "sha256": "857fa478688c74eba2e2499766da57eb76508031e15de2c5ef3b0320e12eec2e",
+    "bytes": 6927632
+  },
+  "skill_translation/translations/exact.zh-TW.json": {
+    "sha256": "c23bb169108f8618c332d1e903426001419552fa24d8e8ba7dfd206fc4262971",
+    "bytes": 915132
+  },
+  "skill_translation/translations/glossary.json": {
+    "sha256": "d1f9abef97b286f9f40fa4e70b586cfa6ad5838c90f93e5a3583ecc05e14f2c8",
+    "bytes": 54576
+  },
+  "skill_translation/translations/retained.json": {
+    "sha256": "7bf4af119f6e68cf6a9e2fade80f6364bdd10998ecb8e1c6c2fabe71de8dd8b1",
+    "bytes": 662
+  },
+  "skill_translation/translations/overrides.zh-CN.json": {
+    "sha256": "bbfbbd3641c7c36ddac59f4712138de9b10eca6d6a72e3221d3751297ffbbb33",
+    "bytes": 37
+  },
+  "skill_translation/translations/style-guide.md": {
+    "sha256": "cddeb134d0798e5f98800dc36ee014498b9f6956770778c2f025b78475deb7a1",
+    "bytes": 1361
+  },
+  "skill_translation/release/Skills/skills.json": {
+    "sha256": "e79d1ada433a1d68dbfc3ba8d172efb8e121b97d8f46dc80083837fe925591a1",
+    "bytes": 7376168
+  },
+  "skill_translation/release/Skills/skills_gb.json": {
+    "sha256": "9c5aea2390664fedc08fb7e2826fd8374f19263d7491d7c332fdef4c4f4c5e5a",
+    "bytes": 7376168
+  },
+  "skill_translation/release/build-info.json": {
+    "sha256": "6bab744f8baeede69d68257b2dba529a1b6d1ec4312e76020c32ac28f3942f8f",
+    "bytes": 1654
+  },
+  "skill_translation/release/童話翻譯插件20261008.js": {
+    "sha256": "eb218d3ada9aed9750c01c53b85166dabe620e86bf71eae261dbc9e8e6ec7bb6",
+    "bytes": 25521
+  },
+  "skill_translation/release/安裝說明.md": {
+    "sha256": "589e4a78d5bd37390ae8140a5d8260662f907b12328b4b6c3ea060cd6333fff3",
+    "bytes": 1026
+  },
+  "skill_translation/test/workflow.test.mjs": {
+    "sha256": "cea3fa30e85ee752a6cb47dae7346bd23d22d9e54f4dff6ca3367a99f132d21f",
+    "bytes": 6269
+  },
+  "skill_translation/test/userscript.test.mjs": {
+    "sha256": "d1b1c19b9c2786895aa67a979999b7f73e6a12ea552f7f616e0c1953a9d0b12d",
+    "bytes": 8410
+  },
+  "skill_translation/test/translation.test.mjs": {
+    "sha256": "553bbe055065e6baf33cc6a5653da03bf12622c06c70745ceb9e0cfa3e78ddd7",
+    "bytes": 2088
+  },
+  "skill_translation/release/site/index_chs.html": {
+    "sha256": "738dcaba3c3b4ffc73c1a6e4d186449d5b3a7466b5a248dbe59af5794dcfca39",
+    "bytes": 5342650,
+    "protected": true
+  },
+  "C:/Users/user/Documents/GitHub/alex343425.github.io/index_chs.html": {
+    "sha256": "738dcaba3c3b4ffc73c1a6e4d186449d5b3a7466b5a248dbe59af5794dcfca39",
+    "bytes": 5342650,
+    "protected": true
+  }
+}

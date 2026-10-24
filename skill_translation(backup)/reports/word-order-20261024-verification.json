@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-24",
+  "changedEntries": {
+    "templates.zh-TW.json": 3739,
+    "exact.zh-TW.json": 220
+  },
+  "changedRows": {
+    "MSkills": 11761,
+    "MMutationSkills": 8875,
+    "MAccessory": 10,
+    "MItems": 12,
+    "MFoods": 2
+  },
+  "changedRowsTotal": 20660,
+  "unchangedFiles": [
+    "source/current.json",
+    "source/snapshots/850993049a6ce9793c2a0cee8df985804a7084862b038285e5973fdd17d2e1a3/MSkills.json",
+    "source/snapshots/78e88f07d907baa742979fbdb776db5017d1d10300ff728a863038c65d8628e5/MMutationSkills.json",
+    "source/snapshots/21f073e105d8d04029fe600cfb2c1eb21d1d754742ba15379fc9c53481d4c213/MMaterials.json",
+    "source/snapshots/1f26c6e05e3f58b15df921bf496ee551573083be147b41ae48e40dcc6675b10a/MWeapons.json",
+    "source/snapshots/4ca2742a19d6bd7387525add1128fb08b323132015ba6ed723aa27c47705752c/MAccessory.json",
+    "source/snapshots/1b84580c3feef7f270944e0cc7e64f72a730f93eafcd5b20b7223205823641a2/MItems.json",
+    "source/snapshots/35cca99feacbb3a8c4c9846cb44d7693c7ed01031277932ac30864e05735e218/MFoods.json",
+    "source/snapshots/113a9f1cc262ee82d72d19943909f350307d220186907cdadd95fcfed75d2d9c/MSkillMutationData.json",
+    "runtime.cjs",
+    "manage.mjs",
+    "pending.jsonl",
+    "translations/glossary.json",
+    "translations/overrides.zh-CN.json",
+    "release/site/index_chs.html",
+    "release/童話翻譯插件20261008.js",
+    "../童話翻譯插件20261008.js"
+  ],
+  "sourceKeysAndExactMetadata": "unchanged",
+  "numericValuesAndParameters": "preserved",
+  "quotedNames": "unchanged",
+  "sourceGrammarGuards": "passed",
+  "releases": {
+    "skills.json": {
+      "changes": {
+        "templates": 3739,
+        "exact": 220
+      },
+      "sha256": "3122cf38f892a7c8b6277d4a7c55669980ee00f64a4373f865b2ba3a30798363"
+    },
+    "skills_gb.json": {
+      "changes": {
+        "templates": 3739,
+        "exact": 220
+      },
+      "sha256": "bbab4df299ea6a5ef6f1ffe9a66c7f79a51cc1e541dab0520b5916bb3b1c4569"
+    }
+  },
+  "examples": {
+    "ct": "CT100％已增加的狀態以戰鬥開始、攻擊魔力提升30％、道具掉落率中提升、由於魔導的深淵將至，無視敵方防禦力50%並發動攻擊",
+    "team": "對敵方全體造成隊伍全體成員合力的樹屬性極大傷害、我方全體：攻擊力＆攻擊魔力{0}倍・{1}回合最大HP大幅提升、敵方全體：毒豆沙(爆毒)賦予",
+    "partBreak": "威力{0}％的光屬性{1}〜{2}次攻擊。自身：天下無雙(極大連擊・超暴擊Ⅱ・發動時自身的CT增加{3}%)發動・下次攻擊技能威力{4}倍、我方全體：攻擊力小幅提升{5}〜{6}次・造成傷害提升{7}〜{8}次、攻擊目標：所受傷害大幅提升・有機率發生部位破壞(僅{9}角色戰鬥)、特殊效果：攻擊技能反射貫穿、闇屬性敵人：威力{10}％的光屬性{11}次追擊"
+  },
+  "validation": {
+    "rows": 64246,
+    "pending": 0,
+    "errors": [],
+    "testsPassed": 23
+  },
+  "runtimeGameTested": false,
+  "uploaded": false
+}

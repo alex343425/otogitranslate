@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "clientDate": "2026-10-24",
+  "scope": "Read-only semantic review of non-helper weapons_items translations; no main output edited.",
+  "snapshot": {
+    "sha256": "fd7f0dc8af8a1311ff6ef0d4bdaf9964fe1739a0a199a1a7b14f861e0bf0bc03",
+    "totalTranslationKeys": 3667,
+    "nonHelperAvailable": 3139
+  },
+  "reviewedCount": 101,
+  "methodology": [
+    "逐句檢查95個以固定間距選取的非helper武器描述，另加入具體風險樣本；覆核來源完整背景、武器名、參數與語序。",
+    "另檢查長票券名單、技能引用與新詞對既有glossary的覆蓋；已核准的人名即使不同於一般習慣也不擅自改名。",
+    "未知且已記錄的專名保留不算普通文字漏譯；未對整段引號內容套泛用忽略規則。",
+    "檢查到前版委員會及善之力用語衝突，最新版已改回評議會及聖之力，因此未列為仍待修的問題。"
+  ],
+  "findings": [
+    {
+      "id": "W01",
+      "priority": "P2",
+      "category": "composition",
+      "status": "resolved-since-first-observation",
+      "sourceKey": "あらゆるものを両断する鋭刃の剣。かつてはかのエクスカリバーに並ぶ聖剣と謳われたが、親しき者の血を啜り、その根源は捻れ歪んだという。アロンダイトパジャマver.専用武器",
+      "currentTranslation": "能斬斷一切的鋒利之劍。昔日曾被讚為能與「聖劍」並列的聖劍，卻因啜飲親近之人的鮮血，根源扭曲變質。亞羅戴特睡衣ver.專用武器",
+      "problem": "名稱エクスカリバー套用聖劍後，與敘述中的聖劍重疊，形成聖劍聖劍的聖劍。保留既有譯名，調整句子並以引號標示專名即可。",
+      "suggestedTranslation": "能斬斷一切的鋒利之劍。昔日曾被讚為能與「聖劍」並列的聖劍，卻因啜飲親近之人的鮮血，根源扭曲變質。亞羅戴特睡衣ver.專用武器",
+      "affectedKeys": [
+        "あらゆるものを両断する鋭刃の剣。かつてはかのエクスカリバーに並ぶ聖剣と謳われたが、親しき者の血を啜り、その根源は捻れ歪んだという。アロンダイトパジャマver.専用武器"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12144,
+          "name": "宿業のアロンダイト",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W02",
+      "priority": "P2",
+      "category": "approved-name",
+      "status": "resolved-since-first-observation",
+      "sourceKey": "ソラノカオリが操る謎の力を増幅させ強烈なビームを放つことができるグローブ。女体化した銀河の混沌王が自らのために発明した優れもの。ソラノ カオリ専用武器",
+      "currentTranslation": "增幅宇宙混沌王操控的神祕力量，能發射強力光束的手套。女體化的銀河混沌王為自己發明的優秀裝備。宇宙混沌王專用武器",
+      "problem": "新武器lexicon將已核准ソラノカオリ=宇宙混沌王覆蓋成空野香織。應移除新詞覆蓋，沿用既有角色名稱。",
+      "suggestedTranslation": "增幅宇宙混沌王操控的神祕力量，能發射強力光束的手套。女體化的銀河混沌王為自己發明的優秀裝備。宇宙混沌王專用武器",
+      "affectedKeys": [
+        "ソラノカオリが操る謎の力を増幅させ強烈なビームを放つことができるグローブ。女体化した銀河の混沌王が自らのために発明した優れもの。ソラノ カオリ専用武器",
+        "ノストラダムス ウェディングver.orソラノカオリ ウェディングver.出現率{0}％★{1}確定チケットガチャが引けるチケット",
+        "謎の光から生み出された謎のグローブ。装着したソラノカオリに名探偵達の力が宿る。身体は女でも頭脳は宇宙、謎だらけの対応可能。ソラノカオリ ウェディングver.専用武器"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12064,
+          "name": "カオスパワー増幅グローブ",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W03",
+      "priority": "P2",
+      "category": "approved-name",
+      "status": "resolved-since-first-observation",
+      "sourceKey": "とある鍛冶屋が魔神器レーヴァテインにオルディン結晶を同化させ昇華させた壊槌",
+      "currentTranslation": "某位鐵匠將歐魯丁結晶同化於魔神器雷瓦汀，使之昇華而成的壞槌",
+      "problem": "新武器lexicon將已核准レーヴァテイン=雷瓦汀覆蓋成萊瓦汀。應移除新詞覆蓋，不能以新glossary蓋過既有用語。",
+      "suggestedTranslation": "某位鐵匠將歐魯丁結晶同化於魔神器雷瓦汀，使之昇華而成的壞槌",
+      "affectedKeys": [
+        "とある鍛冶屋が魔神器レーヴァテインにオルディン結晶を同化させ昇華させた壊槌",
+        "人間さん一行に敗れ、砕かれた魔神器レーヴァテインを再度とある鍛冶屋に修復してもらったもの。ブレア専用装備"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10575,
+          "name": "壊槌ブラビューラ",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W04",
+      "priority": "P2",
+      "category": "semantic",
+      "status": "needs-change",
+      "sourceKey": "チャイムが扱う翡翠色の短剣。侵略の際に自分と似た創造期の妖精がもつ武器の記憶から作った。力を注ぐことで、瞬間移動の触媒として使用することもできる。チャイム専用武器",
+      "currentTranslation": "鐘聲使用的翡翠色短劍。侵略時，依與自己創造期相似的妖精武器記憶製作。注入力氣後，也能作為瞬間移動的觸媒。鐘聲專用武器",
+      "problem": "力を注ぐ是注入力量，並無施加肉體力氣之意；創造期相似的妖精武器記憶亦不順，應明確表達創造時期相近者所持武器的記憶。",
+      "suggestedTranslation": "鐘聲使用的翡翠色短劍。侵略時，依據創造時期與自己相近的妖精所持武器的記憶製作而成。注入力量後，也能作為瞬間移動的觸媒。鐘聲專用武器",
+      "affectedKeys": [
+        "チャイムが扱う翡翠色の短剣。侵略の際に自分と似た創造期の妖精がもつ武器の記憶から作った。力を注ぐことで、瞬間移動の触媒として使用することもできる。チャイム専用武器"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12369,
+          "name": "擬・魔精短剣",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W05",
+      "priority": "P3",
+      "category": "weapon-type",
+      "status": "needs-change",
+      "sourceKey": "初級魔導師が扱う本",
+      "currentTranslation": "初級魔導師使用的書",
+      "problem": "這是武器分類型描述，應依style-guide使用武器種類本；一般背景中的書籍、魔導書不應一律改寫。",
+      "suggestedTranslation": "初級魔導師使用的本",
+      "affectedKeys": [
+        "初級魔導師が扱う本"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10012,
+          "name": "初級魔導書",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W06",
+      "priority": "P3",
+      "category": "terminology",
+      "status": "needs-change",
+      "sourceKey": "オトギノクニの夏を盛り上げるすすき花火。装備してレイドバトルに参加しよう！",
+      "currentTranslation": "炒熱童話之國夏日氣氛的芒草煙火。裝備後參加團體戰吧！",
+      "problem": "團體戰與同批票券及既有レイド=團隊戰不一致；可沿用既有遊戲模式用語。",
+      "suggestedTranslation": "炒熱童話之國夏日氣氛的芒草煙火。裝備後參加團隊戰吧！",
+      "affectedKeys": [
+        "オトギノクニの夏を盛り上げるすすき花火。装備してレイドバトルに参加しよう！",
+        "オトギノクニの夏を盛り上げるロケット花火。装備してレイドバトルに参加しよう！",
+        "オトギノクニの夏を盛り上げる手筒花火。装備してレイドバトルに参加しよう！",
+        "オトギノクニの夏を盛り上げる線香花火。装備してレイドバトルに参加しよう！",
+        "オトギノクニの夏を盛り上げる打ち上げ花火。装備してレイドバトルに参加しよう！",
+        "とある世界の制服リボン。装備してレイドバトルに参加しよう！"
+      ],
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10862,
+          "name": "すすき花火",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W07",
+      "priority": "P2",
+      "category": "post-translation-conversion",
+      "status": "resolved-since-first-observation",
+      "sourceKey": "UNA機関が特別にセレクションした未所持の限定★{0}キャラが出現するチケット（ラインナップ：キンナラ正月{1}ver.、マホラガ正月{2}ver.、シンデレラ〔リメイク〕、ティンカー・ベル〔リメイク〕、リル〔リメイク〕、フェルディナハロウィン{3}ver.、アクエリアス、ホメーロス正月{4}ver.、オーディン、サジタリウス、アプスー、マルドゥーク、キャンサー、イナンナ、イルカルラ、アプスー歌合戦{5}ver.、オーディンバレンタイン{6}ver.、ジャッジメント〔新星〕、サジタリウス〔新星〕、キャンサー〔新星〕、アクエリアス〔新星〕、ジューチャオ、ガルダ花嫁{7}ver.、フェルディナ勇者{8}ver.、アイソーポス魔王{9}ver.、イナンナ水着{10}ver.、イルカルラ水着{11}ver.、シェイクスピア水着{12}ver.、キャロル、チャイム、マジシャン、ハイプリーステス）",
+      "currentTranslation": "可獲得UNA機關特別精選的尚未持有限定★{0}角色的票券（名單：金娜拉正月{1}ver.、摩睺羅伽正月{2}ver.、仙杜瑞拉〔重製〕、汀可貝兒〔重製〕、莉露〔重製〕、斐迪娜萬聖節{3}ver.、寶瓶座、荷梅洛斯正月{4}ver.、奧丁、人馬座、阿普蘇、馬爾杜克、巨蟹座、伊南娜、伊爾庫拉、阿普蘇歌合戰{5}ver.、奧丁情人節{6}ver.、天秤座〔新星〕、人馬座〔新星〕、巨蟹座〔新星〕、寶瓶座〔新星〕、朱雀、迦樓羅花嫁{7}ver.、斐迪娜勇者{8}ver.、艾索波斯魔王{9}ver.、伊南娜水著{10}ver.、伊爾庫拉水著{11}ver.、莎士比亞水著{12}ver.、卡蘿爾、鐘聲、魔術師、女祭司）",
+      "problem": "items流程在lexical後套jpToTw，將已核准寶瓶座再次改成寶甁座。應保護核准中文片段或在轉換後恢復既有字形，而非新增字形覆蓋glossary。",
+      "suggestedTranslation": "可獲得UNA機關特別精選的尚未持有限定★{0}角色的票券（名單：金娜拉正月{1}ver.、摩睺羅伽正月{2}ver.、仙杜瑞拉〔重製〕、汀可貝兒〔重製〕、莉露〔重製〕、斐迪娜萬聖節{3}ver.、寶瓶座、荷梅洛斯正月{4}ver.、奧丁、人馬座、阿普蘇、馬爾杜克、巨蟹座、伊南娜、伊爾庫拉、阿普蘇歌合戰{5}ver.、奧丁情人節{6}ver.、天秤座〔新星〕、人馬座〔新星〕、巨蟹座〔新星〕、寶瓶座〔新星〕、朱雀、迦樓羅花嫁{7}ver.、斐迪娜勇者{8}ver.、艾索波斯魔王{9}ver.、伊南娜水著{10}ver.、伊爾庫拉水著{11}ver.、莎士比亞水著{12}ver.、卡蘿爾、鐘聲、魔術師、女祭司）",
+      "affectedKeys": [
+        "UNA機関が特別にセレクションした未所持の限定★{0}キャラが出現するチケット（ラインナップ：キンナラ正月{1}ver.、マホラガ正月{2}ver.、シンデレラ〔リメイク〕、ティンカー・ベル〔リメイク〕、リル〔リメイク〕、フェルディナハロウィン{3}ver.、アクエリアス、ホメーロス正月{4}ver.、オーディン、サジタリウス、アプスー、マルドゥーク、キャンサー、イナンナ、イルカルラ、アプスー歌合戦{5}ver.、オーディンバレンタイン{6}ver.、ジャッジメント〔新星〕、サジタリウス〔新星〕、キャンサー〔新星〕、アクエリアス〔新星〕、ジューチャオ、ガルダ花嫁{7}ver.、フェルディナ勇者{8}ver.、アイソーポス魔王{9}ver.、イナンナ水着{10}ver.、イルカルラ水着{11}ver.、シェイクスピア水着{12}ver.、キャロル、チャイム、マジシャン、ハイプリーステス）",
+        "UNA機関が特別にセレクションした未所持の限定★{0}キャラが出現するチケット（ラインナップ：キンナラ正月{1}ver.、マホラガ正月{2}ver.、シンデレラ〔リメイク〕、ティンカー・ベル〔リメイク〕、リル〔リメイク〕、フェルディナハロウィン{3}ver.、アクエリアス、ホメーロス正月{4}ver.、オーディン、サジタリウス、アプスー、マルドゥーク、キャンサー、イナンナ、イルカルラ、アプスー歌合戦{5}ver.、オーディンバレンタイン{6}ver.、ジャッジメント〔新星〕、サジタリウス〔新星〕、キャンサー〔新星〕、アクエリアス〔新星〕）",
+        "UNA機関が特別にセレクションした未所持の限定★{0}キャラが出現するチケット（ラインナップ：キンナラ正月{1}ver.、マホラガ正月{2}ver.、シンデレラ〔リメイク〕、ティンカー・ベル〔リメイク〕、リル〔リメイク〕、フェルディナハロウィン{3}ver.、アクエリアス、ホメーロス正月{4}ver.、オーディン、サジタリウス、アプスー、マルドゥーク、キャンサー、イナンナ、イルカルラ、アプスー歌合戦{5}ver.、オーディンバレンタイン{6}ver.、ジャッジメント〔新星〕、サジタリウス〔新星〕、キャンサー〔新星〕）"
+      ],
+      "references": [
+        {
+          "table": "MItems",
+          "id": 7351,
+          "name": "UNA機関特別セレクションフェスガチャチケット3",
+          "mutationRelations": []
+        }
+      ]
+    },
+    {
+      "id": "W08",
+      "priority": "P3",
+      "category": "post-translation-conversion",
+      "status": "resolved-since-first-observation",
+      "sourceKey": "スルトバニー{0}ver.ガチャP",
+      "currentTranslation": "蘇爾特兔女郎{0}ver.轉蛋P",
+      "problem": "同樣的後置jpToTw將既有バニー=兔女郎改成兔女郞，應沿用核准字形。",
+      "suggestedTranslation": "蘇爾特兔女郎{0}ver.轉蛋P",
+      "affectedKeys": [
+        "スルトバニー{0}ver.ガチャP"
+      ],
+      "references": [
+        {
+          "table": "MItems",
+          "id": 15449,
+          "name": "スルトバニー2026ver.ガチャP",
+          "mutationRelations": []
+        }
+      ]
+    }
+  ],
+  "parentCanonicalNameFindings": [],
+  "reviewed": [
+    {
+      "sourceKey": "\"イメージ\"の力によって弾丸を撃ち出すライフル。琴葉 詩織専用武器",
+      "currentTranslation": "藉由「想像」的力量射出子彈的步槍。琴葉 詩織專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10956,
+          "name": "コレットライフル",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "「グレード・ワン」のひとり、ケルピーの宝珠。海に沈む真珠のような美しい輝きを放つ。",
+      "currentTranslation": "「第一階級」之一，凱爾派的寶珠。散發如沉於海中的珍珠般美麗的光輝。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11699,
+          "name": "ケルピーの宝珠",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "「ミラマギ」に受け継がれてきた、伝説のマジカルステッキの{0}つ(という設定)。契約者(マスター)との絆に反応して先端から放たれるのは、太陽の如き眩い『プラバー』！これを放てば大地は光輝き、この世が幸せで満たされちゃうかも……！？ヴィジュー魔法少女{1}ver.専用武器",
+      "currentTranslation": "「奇蹟魔法」代代傳承的傳說魔法杖之{0}（此為設定）。回應與契約者（主人）的羈絆，自杖尖發出的是如太陽般耀眼的「普拉巴」！釋放它後，大地將光彩奪目，說不定世界都會充滿幸福……！？毗濕奴魔法少女{1}ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12522,
+          "name": "金色のマジカルステッキ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "『徹底的』を突き詰めた結果辿り着いたオリジナルチェーンソー。ドラスティック専用武器",
+      "currentTranslation": "將「徹底」追求到極致後誕生的原創鏈鋸。杜拉斯特專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10921,
+          "name": "ドSチェーンソー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "アイドルゆえ常に光を放つ杖\\nジーア専用武器",
+      "currentTranslation": "身為偶像而總是發光的杖\\n吉亞專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10272,
+          "name": "シャルマンの星",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "あらゆるものを両断する鋭刃の剣。かつてはかのエクスカリバーに並ぶ聖剣と謳われたが、親しき者の血を啜り、その根源は捻れ歪んだという。アロンダイトパジャマver.専用武器",
+      "currentTranslation": "能斬斷一切的鋒利之劍。昔日曾被讚為能與「聖劍」並列的聖劍，卻因啜飲親近之人的鮮血，根源扭曲變質。亞羅戴特睡衣ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12144,
+          "name": "宿業のアロンダイト",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ある遺跡から発掘された槌。ただの塊に近い姿となったそれは、今では圧倒的な重量を以て相手を叩き潰すためのものである。",
+      "currentTranslation": "從某座遺跡發掘的槌。外形已近乎普通的塊狀物，如今用來憑藉壓倒性的重量將對手砸爛。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11703,
+          "name": "ソリッドロックハンマー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ある組織から奪取したディマイトの魔剣。リル専用覚醒武器",
+      "currentTranslation": "從某個組織奪得的惡之力魔劍。莉露專用覺醒武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10838,
+          "name": "黒鉄のアルデバラン+",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "いついかなるときも最高クオリティのストーキングを可能にするための様々などうぐが入ったバッグ。鳥羽せつな専用武器",
+      "currentTranslation": "裝有各種工具，讓人隨時都能進行最高品質跟蹤的包包。鳥羽剎那專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11189,
+          "name": "シークレットバッグ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ヴァナルガンドが愛用しているランニングシューズ。ヨルムンガンドがバイトをして誕生日に買ってくれたもので、メンテナンスを欠かさず大切に使っている。ヴァナルガンド学園ver.専用武器",
+      "currentTranslation": "瓦爾特羅古愛用的跑鞋。是約姆加德打工後，為她生日買的禮物，她總是悉心保養、珍惜使用。瓦爾特羅古學園ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12473,
+          "name": "ルプスのランシューズ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ヴェルメリオの近距離戦闘の際に用いる大斧。平時はその内に熱を湛えているがヴェルメリオの想いに応じて炎を纏う。想いの強さが彼女自身を強くするのだ。ヴェルメリオ-アディション-専用武器",
+      "currentTranslation": "威爾梅里奧近距離戰鬥時使用的大斧。平時內藏熱量，會回應她的心意纏繞火焰。強烈的思念使她自身更加強大。威爾梅里奧－追加－專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12189,
+          "name": "重炎のアシィヤタル",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "エナメルの瞳を持つ人形が持っていた短剣\\nコッペリア専用武器",
+      "currentTranslation": "擁有琺瑯眼睛的人偶曾持有的短劍\\n柯貝莉亞專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10107,
+          "name": "エナメルダガー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オーディンがトールとのレゾナンスを経て手にした槍槌。{0}人の力が合わさったことで、赤雷と嵐を纏う。その力は万物を見通し、万雷をもって強大な敵をも突き砕く。オーディン-レゾナンス-専用武器",
+      "currentTranslation": "奧丁與託爾共鳴後獲得的槍槌。{0}人的力量合而為一，纏繞赤雷與風暴。其力量能看穿萬物，以萬雷擊碎強大的敵人。奧丁－共鳴－專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12491,
+          "name": "雷神槍グングニル・テュリサズ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オトギノクニが生まれる遥か昔から創造された斧。製造方法やソザイは一切の謎となっている。永劫の名を体に纏うとき全ての時が動き出す。",
+      "currentTranslation": "在童話之國誕生遙遠以前便已創造的斧。製造方法與素材全都是謎。當永劫之名加諸己身，所有時間都將開始流轉。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12165,
+          "name": "光永劫之斧",
+          "mutationRelations": []
+        },
+        {
+          "table": "MWeapons",
+          "id": 12224,
+          "name": "樹永劫之斧",
+          "mutationRelations": []
+        },
+        {
+          "table": "MWeapons",
+          "id": 12279,
+          "name": "氷永劫之斧",
+          "mutationRelations": []
+        },
+        {
+          "table": "MWeapons",
+          "id": 12388,
+          "name": "闇永劫之斧",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オトギノクニの海底に封印されていた古代の短剣",
+      "currentTranslation": "曾被封印於童話之國海底的古代短劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10967,
+          "name": "紺碧の封刃",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オトギノクニの精霊の加護を受けた本",
+      "currentTranslation": "受到童話之國精靈庇佑的本",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10246,
+          "name": "雷鳴の聖本",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オトギノクニの霊山に眠っていた神秘的な杖",
+      "currentTranslation": "沉眠於童話之國靈山的神祕杖",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11262,
+          "name": "翠嵐の霊杖",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オトギノクニ名物のビール。コクが最高。シンデレラ子ver.専用覚醒武器",
+      "currentTranslation": "童話之國著名的啤酒。滋味醇厚無比。仙杜瑞拉子年ver.專用覺醒武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11071,
+          "name": "Otogi BEER!!+",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "オルスロー騎士団の団長に代々受け継がれてきた刀剣",
+      "currentTranslation": "歐魯斯洛騎士團團長代代相傳的刀劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10342,
+          "name": "騎士剣セイブザクイーン",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "お気に入りのツートンカラーの髪を際立たせるアクセサリーを探しているときに偶然見つけたティアラ。海で泳いでも外れないようにしっかりと固定してあるらしい。スキュラ専用武器",
+      "currentTranslation": "尋找能凸顯心愛雙色頭髮的飾品時，偶然發現的頭冠。據說已牢牢固定，就算在海中游泳也不會掉。斯庫拉專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11966,
+          "name": "スキュラのティアラ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "カエルの呪いを解く奇跡の剣\\nキックル専用武器",
+      "currentTranslation": "解除青蛙詛咒的奇蹟之劍\\n奇庫達專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10274,
+          "name": "キュッセンソード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "かつての創造期では数え切れない程の鬼の血を吸ったとか…\\n吉備津 桃葉専用武器",
+      "currentTranslation": "據說在過去的創造期，曾吸取無數鬼的鮮血……\\n吉備津 桃葉專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10161,
+          "name": "鬼斬丸",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "かつて神と崇められていた者が使っていた弓",
+      "currentTranslation": "曾被尊奉為神的存在所使用的弓",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10933,
+          "name": "堕天の弓",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "かつて全てを破壊しつくした大嵐が過ぎ去った後に発見された短剣。制御不能な疾風の力を得ることができる",
+      "currentTranslation": "曾摧毀一切的大風暴過後發現的短劍。能獲得無法控制的疾風之力",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11654,
+          "name": "ストームダガー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "かつて力を求めて人外に転生した戦士の斧。狂戦士の力を得ることができる。",
+      "currentTranslation": "昔日為追求力量而轉生為非人之物的戰士所使用的斧。能獲得狂戰士之力。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11304,
+          "name": "ベルセルクアックス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "かわいい猫のケーキがついたティーセット。これでご奉仕をしたり、してくれなかったりするんだにゃん。フルート猫カフェ{0}ver.専用武器",
+      "currentTranslation": "附有可愛貓咪蛋糕的茶具組。會用它服侍，也可能不服侍喵。長笛貓咪咖啡廳{0}ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11602,
+          "name": "にゃんこティーセット",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ギミックが満載な発明王のダガー。これ一本で君もレッツ、ひらめきときめき!!エジソン専用武器",
+      "currentTranslation": "充滿機關的發明王短劍。只要這一把，你也能一起靈感閃現、心動不已！！愛迪生專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11775,
+          "name": "ビビビッと発明ダガー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "クラースに負けないくらいの笑顔をお届け！ナイトメア水着ver.専用武器",
+      "currentTranslation": "送上不輸克拉斯的笑容！夢魘泳裝ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10453,
+          "name": "ひまわりステッキ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "グリンダのディトルパを召喚することのできる魔導書。シンデレラ・アビス専用武器",
+      "currentTranslation": "能召喚格林達的迪托爾帕的魔導書。深淵灰姑娘專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10468,
+          "name": "召喚書グリンダ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "コーナーで差がつくと噂のマクダフお気に入りのシューズ。マクダフ カバディver.専用武器",
+      "currentTranslation": "傳聞能在轉彎時拉開差距，馬克達夫心愛的鞋。馬克達夫 卡巴迪ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11508,
+          "name": "お花模様のシューズ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "コミッティより支給されたペン。エミリーに合わせて作られている。エミリー(第{0}部)専用武器",
+      "currentTranslation": "評議會配發，配合艾蜜莉製作的筆。艾蜜莉（第{0}部）專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11212,
+          "name": "第5号委員のペン",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "これを装備して気になるあの子と共に戦場に立つと距離が一気に縮まると言い伝えのある伝説の剣。",
+      "currentTranslation": "傳說裝備這把劍，與心儀的對象一同站上戰場，便能瞬間拉近彼此的距離。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12217,
+          "name": "親愛の尖剣",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "サーモンムニエルが長い年月をかけて真なる姿に進化した姿。たまに全体攻撃できてとても強い",
+      "currentTranslation": "香煎鮭魚經過漫長歲月，進化成真正的姿態。偶爾能全體攻擊，非常強大",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10748,
+          "name": "サモン・ムニエル",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "サラマンダーの赤い衣装に合わせて作られた豪華なレッドブーケ。サラマンダー花嫁{0}ver.専用武器",
+      "currentTranslation": "配合沙羅曼達紅色服裝製作的華麗紅色捧花。沙羅曼達新娘{0}ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11700,
+          "name": "レッドフラワーのブーケ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "しっかり者のコーディリアが使っているボウガン。姉たちとは違い、ちゃんと手入れをしている。コーディリア専用武器",
+      "currentTranslation": "可靠的柯迪莉雅使用的弩。與姊姊們不同，保養得很仔細。柯迪莉雅專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11531,
+          "name": "プレイング・カーズ・ボウガン",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "シンデレラのご褒美イラストを見た者の証。お酒の入った哺乳瓶を頭に乗せていたが、無くしてしまったらしい。",
+      "currentTranslation": "看過仙杜瑞拉獎勵插圖之人的證明。原本把裝酒的奶瓶放在頭上，似乎已經弄丟了。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12250,
+          "name": "もっちりシンデレラ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "すっごく硬いデンデンのナイフ。噂によると倒したデンデンで作っているとか……",
+      "currentTranslation": "非常堅硬的蝸牛小刀。傳聞是用打倒的蝸牛製作……",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11762,
+          "name": "超硬質化デンデンナイフ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ソザイ団の最終兵器……と噂される剣。どの武器も握ると自分の運命がわかるらしい。どのようなソザイで作られているのかは不明である。",
+      "currentTranslation": "傳聞是素材團最終兵器的劍……據說握住其中任何一種武器，就能知道自己的命運。使用何種素材製作則不得而知。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12408,
+          "name": "タロットソード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ソザメリオが愛用する斧。どう見ても包丁だが、本人が斧だと言い張っているので斧とされている",
+      "currentTranslation": "素材威爾梅里奧愛用的斧。不管怎麼看都是菜刀，但本人堅稱是斧，所以被認定為斧",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11470,
+          "name": "ソザーズキッチンナイフ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "たくさんのイタズラを計画した秘密の巻物。珠絵専用真覚醒武器",
+      "currentTranslation": "計畫許多惡作劇的祕密卷軸。珠絵專用真覺醒武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11087,
+          "name": "稲荷絵巻++",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "チューチラのディトルパを召喚することのできる魔導書。シンデレラ・アビス専用武器",
+      "currentTranslation": "能召喚圖西拉的迪托爾帕的魔導書。深淵灰姑娘專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10466,
+          "name": "召喚書チューチラ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ディマイトの力が開花したペン",
+      "currentTranslation": "惡之力綻放的筆",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11003,
+          "name": "ディマイトスティロⅢ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "とあるハロウィンの国の槍\\n毎ターン体力みなぎる",
+      "currentTranslation": "某個萬聖節國度的槍\\n每回合都充滿體力",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10113,
+          "name": "番人の槍",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "とある騎士団との戦いで破損した祭器カドゥケウスをとある鍛冶屋が鍛え直したもの",
+      "currentTranslation": "某位鐵匠重新鍛造，在與某騎士團戰鬥中受損的祭器雙蛇杖",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10380,
+          "name": "神器ケリュケイオン",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "とある世界の制服リボン。装備してレイドバトルに参加しよう！",
+      "currentTranslation": "某個世界的制服緞帶。裝備後參加團體戰吧！",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10804,
+          "name": "静かの海学園のリボン",
+          "mutationRelations": []
+        }
+      ],
+      "status": "see-findings"
+    },
+    {
+      "sourceKey": "とある鍛冶屋が天剣セイブザキングにオルディン結晶を同化させ昇華させた嵐剣",
+      "currentTranslation": "某位鐵匠將歐魯丁結晶同化於天劍國王守護者，使之昇華而成的嵐劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10573,
+          "name": "嵐剣セイブザエンペラー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "とっても大きなピーチパラソル。紫外線を{0}％カットして体感温度を{1}℃下げる効果がある優れもの。ただ持ち運びが面倒くさいのでどうにかしたいと思っているらしい。オケアノス専用武器",
+      "currentTranslation": "非常巨大的海灘陽傘。能阻擋{0}％紫外線，降低{1}℃體感溫度的優秀用品。不過搬運很麻煩，她似乎很想解決。俄刻阿諾斯專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11985,
+          "name": "ビッグ・ビーチパラソル",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "バイレ・アス・ハロウィンの深淵に触れた短剣",
+      "currentTranslation": "觸及拜萊・阿斯・萬聖節深淵的短劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10499,
+          "name": "深淵の短剣",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "メソザポタミア文明が繁栄する際に使われる杖。何のソザイかは不明だが、不思議な力を持つと言われている。その力はまるで魔法のような力であるという。",
+      "currentTranslation": "美素材不達米亞文明繁盛時使用的杖。雖然不知道是什麼素材，卻據說擁有神奇力量。那力量據說宛如魔法一般。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12213,
+          "name": "ファンタズムロッド",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ルーキー達がこよなく愛す初心者専用の槍",
+      "currentTranslation": "深受菜鳥們喜愛的新手專用槍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10003,
+          "name": "ルーキーランス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ロゼッタゲートの未知なる力によって生み出された槍。持ち主が秘めるすべての可能性の道しるべとなり、勝利をもたらすと伝えられている。",
+      "currentTranslation": "由羅塞塔之門未知力量創造的槍。相傳能指引持有者蘊藏的所有可能性，帶來勝利。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11481,
+          "name": "ロゼッタランス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "永遠に朽ちることがない未来永劫の繁栄をもたらす杖。永遠の力を得ることができる",
+      "currentTranslation": "永遠不會腐朽，能帶來永恆繁榮的杖。能獲得永恆之力",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11044,
+          "name": "エターナルスタッフ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "永遠に絶えることのない、毒の魔力が宿りし剣。皮膚や血を融かし、対象者に忘れられぬ痛みと消えない傷を与えることができる。",
+      "currentTranslation": "寄宿永不止息的毒之魔力的劍。能溶解皮膚與血液，為目標帶來難以忘懷的痛苦與永不消逝的傷痕。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11719,
+          "name": "ポイズンソード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "禁じられた錬金術によって生み出された黄金の弓",
+      "currentTranslation": "透過禁忌鍊金術創造的黃金弓",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11164,
+          "name": "黄金の弓",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "賢者が聖水に魂を宿して形を成したとされる幻の剣。持ち主の意思に従い自由に姿形を変化させることができる",
+      "currentTranslation": "據說是賢者將靈魂寄宿於聖水，使之成形的夢幻劍。能依持有者意志自由變換外形",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11552,
+          "name": "ハイドロブレード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "古の時代に作られた蒸気機構を使い、現代まで止まらず稼働している弓。全ての部品が職人の手によって一寸の狂いもなくはめられている。",
+      "currentTranslation": "使用遠古時代製造的蒸汽機構，至今仍不停運轉的弓。所有零件都由工匠精準無誤地嵌合。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12309,
+          "name": "スチームアロー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "古の時代に呪いで使われていた槌。黒曜石特有の輝きに包まれているが、少しの衝撃で割れてしまうので注意が必要。",
+      "currentTranslation": "遠古時代施行詛咒時使用的槌。雖籠罩著黑曜石特有的光輝，卻稍受衝擊就會碎裂，必須小心。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12346,
+          "name": "オブシディアンハンマー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "孤独な獅子の意志を宿した剣。ひとたびこれを手にすれば、獅子の力と夢の一端にまみえるだろう。",
+      "currentTranslation": "寄宿孤獨獅子意志的劍。一旦握住它，便能窺見獅子力量與夢想的一角。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12056,
+          "name": "レグルスソード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "己の力を最上まで高めるための袖、鬼の如き剛腕と冷気ですべての魔の者は動きを止め打ち砕かれる。鬼崎 きらら専用武器",
+      "currentTranslation": "將自身力量提升至極限的袖子。以鬼般剛腕與寒氣，使所有魔物停止動作並粉碎。鬼崎 綺羅羅專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11323,
+          "name": "氷天下の鬼腕",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "光すらも逃れることができない深淵の如き黒に染まった杖",
+      "currentTranslation": "染上宛如連光都無法逃脫的深淵般漆黑的杖",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11236,
+          "name": "漆黒の杖",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "幸運を引き寄せる縁起のいい道具。最高潮の力を引き出した姿。すべてはかっ...、この道具のおかげである",
+      "currentTranslation": "吸引幸運的吉祥道具。引出最巔峰力量的姿態。一切都是河……這個道具的功勞",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10690,
+          "name": "ベアーズクローハンド 幸河童",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "荒々しさと優しさが宿った剣",
+      "currentTranslation": "寄宿狂野與溫柔的劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10730,
+          "name": "御霊の剣",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "合体剣エクスキャリバーにラウラのディ・マキナを融合させた真の合体剣。ラウラ専用武器",
+      "currentTranslation": "將勞拉的迪・瑪奇娜與合體劍王者之劍融合，真正的合體劍。勞拉專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10881,
+          "name": "合体剣エクス・ディ・キャリバー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "黒く尖った短剣",
+      "currentTranslation": "漆黑尖銳的短劍",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10027,
+          "name": "ブラックスティレット",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "最高のアンスタ映えをしたい人には必見の自撮り棒。清少納言専用武器",
+      "currentTranslation": "想拍出最上相的社群照片之人必看的自拍棒。清少納言專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10954,
+          "name": "アンスタ用自撮り棒",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "酸液が滴っている弓。弓から生み出された酸液は長い年月をかけて醸成されていった。その酸に触れたモノは全身に腐食が進行し、ドロドロに溶解していくという。",
+      "currentTranslation": "滴落酸液的弓。由弓產生的酸液經過漫長歲月醞釀而成。據說碰到那酸液的東西會全身逐漸腐蝕，融成黏稠液體。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12499,
+          "name": "アシッドアロー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "使用者の身の丈を優に超える、隕鉄の大弓。星の魔獣たるサジタリウスの膂力がなければまともに弦を引くこともできないが、放たれる一矢はまさに流星の如く。サジタリウス専用武器",
+      "currentTranslation": "以隕鐵製成，遠超使用者身高的大弓。沒有星之魔獸人馬座的膂力，連正常拉弦都做不到，射出的箭卻宛如流星。人馬座專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12137,
+          "name": "剛弓ミーティア",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "師団長補佐官に与えられた熊型の全自動戦闘マシーン。クワームレオ専用武器",
+      "currentTranslation": "賜予師團長輔佐官的熊型全自動戰鬥機械。誇姆雷歐專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10935,
+          "name": "特製巡回ロボ：KUMA",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "試練の塔の守護者の杖",
+      "currentTranslation": "試煉之塔守護者的杖",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10190,
+          "name": "ガーディアンワンド",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "持っていたら、かっこいいエージェントになれる…かも。ジャービス専用武器",
+      "currentTranslation": "有了它，就能成為帥氣特務……或許吧。賈維斯專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10537,
+          "name": "シークレットアックス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "自身の強力な雷電の力の触媒として用いられる銃。その銃口から放たれる電光石火の如き雷撃はいかなる魔の者をも穿つ。水城 ゆきかぜ専用武器",
+      "currentTranslation": "作為自身強大雷電力量觸媒的槍。槍口釋放電光石火般的雷擊，貫穿任何魔物。水城 雪風專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11320,
+          "name": "ライトニングシューター",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "蛇が描かれた凧。星のある所まで届くよう軽量化され、深い赤色は彼女の好みに合わせて染められている。…天吉兆が示された…。ポステリオル正月{0}ver.専用武器",
+      "currentTranslation": "畫著蛇的風箏。為飛到星星所在之處而輕量化，深紅色依她的喜好染成。……上天顯現吉兆了……。波斯帖露新年{0}ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11846,
+          "name": "蛇使いの凧",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "呪いを帯びた弓。棄てられた武器は年月を経るごとに淀みを蓄積していく。手にしたものは身体から蝕まれ、いずれ思考をも支配されるという。",
+      "currentTranslation": "帶有詛咒的弓。遭拋棄的武器會隨歲月累積汙濁。據說握住它的人會先從身體遭到侵蝕，最後連思想也會受到支配。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12465,
+          "name": "カースアロー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "呪われた人形が持つ斧。未知の怨念が宿っている。",
+      "currentTranslation": "受詛咒人偶持有的斧。寄宿未知怨念。",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10504,
+          "name": "ペインドールアックス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "十二神官の一人、ハマルが扱う杖。長い年月の間ハマルと共にあったため、練り上げた魔力が浸透・定着している。そのため意識せずとも魔法を増幅させ発動できるほどに馴染んでいる。ハマル専用武器",
+      "currentTranslation": "十二神官之一哈瑪露使用的杖。長年相伴，使其凝鍊的魔力滲入並定著。契合到無須刻意，就能增幅並發動魔法。哈瑪露專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12490,
+          "name": "教繙アリエス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "初級魔導師が扱う本",
+      "currentTranslation": "初級魔導師使用的書",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10012,
+          "name": "初級魔導書",
+          "mutationRelations": []
+        }
+      ],
+      "status": "see-findings"
+    },
+    {
+      "sourceKey": "少しだけでいい、私に幸せを…と祈りを込めたダガー。リリア・エンジェル専用武器",
+      "currentTranslation": "注入「一點點也好，請賜予我幸福……」祈願的匕首。莉莉婭・安潔兒專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10860,
+          "name": "祈りを込めたダガー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "信じるものは救われる…のか…？イーガル専用武器",
+      "currentTranslation": "相信就能得救……嗎……？伊格爾專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11255,
+          "name": "オカルティックランス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "深く色づく紫陽花の力が宿る小太刀。ひとたび触れれば毒が回り、ふたたび触れれば死に至る、との噂。ナーガ専用武器",
+      "currentTranslation": "寄宿色澤深濃繡球花力量的小太刀。傳聞碰一次毒便擴散，再碰一次就會致死。那伽專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11538,
+          "name": "紫陽花濡れたる小太刀",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "神々から認められた正義の使者のみが持つことを許される剣。ペルセウス専用武器",
+      "currentTranslation": "只有被眾神認可的正義使者才獲准持有的劍。珀修斯專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10556,
+          "name": "ジャスティスアンバサダー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "神すら射殺すことが可能な槍\\nイシャナ専用、真覚醒武器",
+      "currentTranslation": "連神都能射殺的槍\\n伊夏娜專用真覺醒武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10648,
+          "name": "タケミカヅチ++",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "神代の昔、天より降り注ぐ災いを幾度も退けた八武神なる者が扱いし槍。偉大なる力が秘められている",
+      "currentTranslation": "神代之昔，曾多次擊退從天而降災禍的八武神所使用的槍。蘊藏偉大的力量",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11206,
+          "name": "八武神の槍",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "神代の昔、八部衆なる者が幼少期より扱い歴戦を共にしてきた愛剣。漲る力が秘められている",
+      "currentTranslation": "神代之昔，八部眾自幼使用、共歷無數戰役的愛劍。蘊藏澎湃的力量",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11390,
+          "name": "八部衆の剣",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "神秘的な宇宙の力を秘めた光り輝く鞭。大いなる輝きは、悪しき敵をなぎ倒す",
+      "currentTranslation": "蘊藏神祕宇宙之力、閃耀光芒的鞭。偉大的光輝能擊倒邪惡敵人",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11761,
+          "name": "ギャラクシーウィップ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "人々の心を奮い立たす重低音を出すことが出来る鯛型のベース。イロハ専用武器",
+      "currentTranslation": "能發出振奮人心低音的鯛魚型貝斯。伊呂波專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10752,
+          "name": "レッドスナッパーベース",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "人間さん一行に敗れ、砕かれた天剣セイブザキングを再度とある鍛冶屋に修復してもらったもの。レーゼ専用覚醒武器",
+      "currentTranslation": "敗給人類先生一行人而碎裂的天劍國王守護者，再請某位鐵匠修復後的姿態。蕾潔專用覺醒武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11077,
+          "name": "天剣セイブザゴッド+",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "人知を超越した獣の力が秘められている剣。理性の及ばぬ圧倒的な力を引き出せる",
+      "currentTranslation": "蘊藏超越人智的野獸力量的劍。能引出理性所不及的壓倒性力量",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11646,
+          "name": "ビーストソード",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "水中で{0}日ほど空気を吸い続けることができるボンベ。亀姫専用武器",
+      "currentTranslation": "能在水中持續呼吸約{0}日的氣瓶。亀姫專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11166,
+          "name": "タートルサレンダー",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "世界を創った神の杖\\nフスミ専用武器",
+      "currentTranslation": "創造世界之神的杖\\n和室門專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10120,
+          "name": "創世の杖",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "盛り上がるハロウィンの夜をもっと盛り上げる為に準備されたかわいいドール。目指せ画面映え!!アズエルハロウィン{0}ver.専用武器",
+      "currentTranslation": "為讓熱鬧萬聖夜更加熱鬧而準備的可愛人偶。目標是畫面上相！！阿茲艾爾萬聖節{0}ver.專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 11790,
+          "name": "ラブリー・ナイトドールランス",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "聖なる夜に駆ける者の鞭\\nクラース専用武器",
+      "currentTranslation": "奔馳於聖誕夜之人的鞭\\n克拉斯專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10178,
+          "name": "聖なる闇夜",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "摂取すると凶暴になる悪魔の血\\nヴァン・ピュール専用武器",
+      "currentTranslation": "攝取後會變得凶暴的惡魔之血\\n凡・皮爾專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10214,
+          "name": "デビルブラッド",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "千の物語から生まれた闇の眷属の弓",
+      "currentTranslation": "由千則故事誕生的闇之眷屬之弓",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10257,
+          "name": "千一夜の魔弓 闇眷属",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "善なる者が悪しき者に裁きを下す為の天秤。裁きの対象は決して逃れることは出来ない。たとえ誰であろうとも。ジャッジメント専用武器",
+      "currentTranslation": "善者用來裁決惡者的天秤。受裁決的目標絕不可能逃脫，無論是誰。天秤座專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12183,
+          "name": "聖秤サルヴァトル",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "創造期に折れた神剣を短剣に打ち直したもの\\n神に捧げられていた真打",
+      "currentTranslation": "將創造期折斷的神劍重新鍛造為短劍\\n曾獻給神的真品",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10151,
+          "name": "十束剣 真打",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "ソラノカオリが操る謎の力を増幅させ強烈なビームを放つことができるグローブ。女体化した銀河の混沌王が自らのために発明した優れもの。ソラノ カオリ専用武器",
+      "currentTranslation": "增幅宇宙混沌王操控的神祕力量，能發射強力光束的手套。女體化的銀河混沌王為自己發明的優秀裝備。宇宙混沌王專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12064,
+          "name": "カオスパワー増幅グローブ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "とある鍛冶屋が魔神器レーヴァテインにオルディン結晶を同化させ昇華させた壊槌",
+      "currentTranslation": "某位鐵匠將歐魯丁結晶同化於魔神器雷瓦汀，使之昇華而成的壞槌",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10575,
+          "name": "壊槌ブラビューラ",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "チャイムが扱う翡翠色の短剣。侵略の際に自分と似た創造期の妖精がもつ武器の記憶から作った。力を注ぐことで、瞬間移動の触媒として使用することもできる。チャイム専用武器",
+      "currentTranslation": "鐘聲使用的翡翠色短劍。侵略時，依與自己創造期相似的妖精武器記憶製作。注入力氣後，也能作為瞬間移動的觸媒。鐘聲專用武器",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 12369,
+          "name": "擬・魔精短剣",
+          "mutationRelations": []
+        }
+      ],
+      "status": "see-findings"
+    },
+    {
+      "sourceKey": "オトギノクニの夏を盛り上げるすすき花火。装備してレイドバトルに参加しよう！",
+      "currentTranslation": "炒熱童話之國夏日氣氛的芒草煙火。裝備後參加團體戰吧！",
+      "references": [
+        {
+          "table": "MWeapons",
+          "id": 10862,
+          "name": "すすき花火",
+          "mutationRelations": []
+        }
+      ],
+      "status": "see-findings"
+    },
+    {
+      "sourceKey": "UNA機関が特別にセレクションした未所持の限定★{0}キャラが出現するチケット（ラインナップ：キンナラ正月{1}ver.、マホラガ正月{2}ver.、シンデレラ〔リメイク〕、ティンカー・ベル〔リメイク〕、リル〔リメイク〕、フェルディナハロウィン{3}ver.、アクエリアス、ホメーロス正月{4}ver.、オーディン、サジタリウス、アプスー、マルドゥーク、キャンサー、イナンナ、イルカルラ、アプスー歌合戦{5}ver.、オーディンバレンタイン{6}ver.、ジャッジメント〔新星〕、サジタリウス〔新星〕、キャンサー〔新星〕、アクエリアス〔新星〕、ジューチャオ、ガルダ花嫁{7}ver.、フェルディナ勇者{8}ver.、アイソーポス魔王{9}ver.、イナンナ水着{10}ver.、イルカルラ水着{11}ver.、シェイクスピア水着{12}ver.、キャロル、チャイム、マジシャン、ハイプリーステス）",
+      "currentTranslation": "可獲得UNA機關特別精選的尚未持有限定★{0}角色的票券（名單：金娜拉正月{1}ver.、摩睺羅伽正月{2}ver.、仙杜瑞拉〔重製〕、汀可貝兒〔重製〕、莉露〔重製〕、斐迪娜萬聖節{3}ver.、寶瓶座、荷梅洛斯正月{4}ver.、奧丁、人馬座、阿普蘇、馬爾杜克、巨蟹座、伊南娜、伊爾庫拉、阿普蘇歌合戰{5}ver.、奧丁情人節{6}ver.、天秤座〔新星〕、人馬座〔新星〕、巨蟹座〔新星〕、寶瓶座〔新星〕、朱雀、迦樓羅花嫁{7}ver.、斐迪娜勇者{8}ver.、艾索波斯魔王{9}ver.、伊南娜水著{10}ver.、伊爾庫拉水著{11}ver.、莎士比亞水著{12}ver.、卡蘿爾、鐘聲、魔術師、女祭司）",
+      "references": [
+        {
+          "table": "MItems",
+          "id": 7351,
+          "name": "UNA機関特別セレクションフェスガチャチケット3",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    },
+    {
+      "sourceKey": "スルトバニー{0}ver.ガチャP",
+      "currentTranslation": "蘇爾特兔女郎{0}ver.轉蛋P",
+      "references": [
+        {
+          "table": "MItems",
+          "id": 15449,
+          "name": "スルトバニー2026ver.ガチャP",
+          "mutationRelations": []
+        }
+      ],
+      "status": "reviewed-no-actionable-semantic-issue"
+    }
+  ]
+}

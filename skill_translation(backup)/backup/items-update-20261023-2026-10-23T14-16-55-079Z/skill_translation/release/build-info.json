@@ -1,0 +1,37 @@
+{
+  "builtAt": "2026-10-22T11:12:46.080Z",
+  "source": {
+    "MSkills": {
+      "file": "source/snapshots/850993049a6ce9793c2a0cee8df985804a7084862b038285e5973fdd17d2e1a3/MSkills.json",
+      "sha256": "850993049a6ce9793c2a0cee8df985804a7084862b038285e5973fdd17d2e1a3",
+      "count": 38352,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MSkills.json",
+      "lastModified": "Thu, 22 Oct 2026 02:41:43 GMT"
+    },
+    "MMutationSkills": {
+      "file": "source/snapshots/78e88f07d907baa742979fbdb776db5017d1d10300ff728a863038c65d8628e5/MMutationSkills.json",
+      "sha256": "78e88f07d907baa742979fbdb776db5017d1d10300ff728a863038c65d8628e5",
+      "count": 11705,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MMutationSkills.json",
+      "lastModified": "Thu, 22 Oct 2026 02:42:08 GMT"
+    },
+    "MSkillMutationData": {
+      "file": "source/snapshots/113a9f1cc262ee82d72d19943909f350307d220186907cdadd95fcfed75d2d9c/MSkillMutationData.json",
+      "sha256": "113a9f1cc262ee82d72d19943909f350307d220186907cdadd95fcfed75d2d9c",
+      "count": 10236,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MSkillMutationData.json",
+      "lastModified": "Thu, 22 Oct 2026 02:44:15 GMT"
+    }
+  },
+  "schemaVersion": 1,
+  "rows": 50057,
+  "uniqueDescriptions": 42390,
+  "translatedRows": 50038,
+  "retainedRows": 19,
+  "pending": 0,
+  "errors": [],
+  "files": {
+    "Skills/skills.json": "e79d1ada433a1d68dbfc3ba8d172efb8e121b97d8f46dc80083837fe925591a1",
+    "Skills/skills_gb.json": "9c5aea2390664fedc08fb7e2826fd8374f19263d7491d7c332fdef4c4f4c5e5a"
+  }
+}

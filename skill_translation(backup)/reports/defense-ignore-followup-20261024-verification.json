@@ -1,0 +1,34 @@
+{
+  "releaseDiff": {
+    "skills.json": {
+      "templatesChanged": 19,
+      "exactChanged": 1,
+      "exactAdded": 2
+    },
+    "skills_gb.json": {
+      "templatesChanged": 19,
+      "exactChanged": 1,
+      "exactAdded": 2
+    }
+  },
+  "changedRows": {
+    "MSkills": 58,
+    "MMutationSkills": 30
+  },
+  "preservedFiles": 17,
+  "remainingOldWording": 0,
+  "approvedHalfDefenseEquivalences": [
+    {
+      "table": "MSkills",
+      "id": 58071,
+      "source": "CTが100％増加した状態でバトル開始でき、攻撃魔力が30％上昇し、アイテムドロップ率が中UPし、魔導の深淵に至ることで敵の防御力を一時的に半減させて攻撃できる",
+      "effectiveSource": "CTが100％増加した状態でバトル開始でき、攻撃魔力が30％上昇し、アイテムドロップ率が中UPし、魔導の深淵に至ることで敵の防御力を一時的に50%減少させて攻撃できる"
+    },
+    {
+      "table": "MSkills",
+      "id": 58081,
+      "source": "CTが100％増加した状態でバトル開始でき、攻撃力が30％上昇し、アイテムドロップ率が中UPし、魔導の深淵に至ることで敵の防御力を一時的に半減させて攻撃できる",
+      "effectiveSource": "CTが100％増加した状態でバトル開始でき、攻撃力が30％上昇し、アイテムドロップ率が中UPし、魔導の深淵に至ることで敵の防御力を一時的に50%減少させて攻撃できる"
+    }
+  ]
+}

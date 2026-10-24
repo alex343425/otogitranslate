@@ -1,0 +1,23 @@
+{
+  "archive": "D:\\codex_test\\otogi_test\\skill_translation\\skill_translation_word_order_20261024.zip",
+  "bytes": 2451035,
+  "sha256": "241e85ede3319228ccc95becf8149181c099d06bdbb62c04795143a3629e1b3f",
+  "entries": [
+    {
+      "path": "Skills/skills.json",
+      "bytes": 9616508,
+      "sha256": "3122cf38f892a7c8b6277d4a7c55669980ee00f64a4373f865b2ba3a30798363"
+    },
+    {
+      "path": "Skills/skills_gb.json",
+      "bytes": 9616508,
+      "sha256": "bbab4df299ea6a5ef6f1ffe9a66c7f79a51cc1e541dab0520b5916bb3b1c4569"
+    },
+    {
+      "path": "build-info.json",
+      "bytes": 4511,
+      "sha256": "bae772f7fdc0d20ad58ffe51dfd3c21feb26f0780e134a7bc5f7bd5b8444270d"
+    }
+  ],
+  "verified": true
+}

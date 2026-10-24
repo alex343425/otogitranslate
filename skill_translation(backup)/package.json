@@ -1,0 +1,14 @@
+{
+  "name": "otogi-skill-translation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node manage.mjs sync",
+    "build": "node manage.mjs build",
+    "check": "node manage.mjs check",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": { "opencc-js": "1.4.2" },
+  "engines": { "node": ">=22" }
+}

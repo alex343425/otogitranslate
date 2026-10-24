@@ -1,0 +1,37 @@
+{
+  "path": "D:\\codex_test\\otogi_test\\skill_translation\\skill_translation_items_update_20261024.zip",
+  "bytes": 2456279,
+  "sha256": "15436db2f2eba6f8a583b26ae644a5c56dd6ed9dc0a33175103ae96054925f0c",
+  "entries": [
+    {
+      "name": "Skills/skills.json",
+      "bytes": 9605490,
+      "sha256": "53f039cffc9fe5334e458ab4a96ba45a5d72c0dabd41450eb36c77c164ee6fb0",
+      "matches": true
+    },
+    {
+      "name": "Skills/skills_gb.json",
+      "bytes": 9605490,
+      "sha256": "281ed8ef20501fe8f8e16f2d6108312f9dbde6d8a42b9348197e3639af26d774",
+      "matches": true
+    },
+    {
+      "name": "童話翻譯插件20261008.js",
+      "bytes": 25602,
+      "sha256": "8c195d87043d2131e6e922fb32671a5949a900ae32fa02ee5ea900d43db2b948",
+      "matches": true
+    },
+    {
+      "name": "build-info.json",
+      "bytes": 4511,
+      "sha256": "2d26b6de1dc41c9e03e2467338fc8b93aec73511911d765c11ccddc508e94cf4",
+      "matches": true
+    },
+    {
+      "name": "安裝說明.md",
+      "bytes": 1432,
+      "sha256": "3ade352ed6dace4c83a292124a06afc07731385a4609265417a32b4f5be6a158",
+      "matches": true
+    }
+  ]
+}

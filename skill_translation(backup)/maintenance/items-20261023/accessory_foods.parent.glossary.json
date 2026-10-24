@@ -1,0 +1,134 @@
+[
+  {
+    "ja": "ミラマギ",
+    "zhTW": "ミラマギ",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "カフェジャ",
+    "zhTW": "カフェジャ",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "放セカ",
+    "zhTW": "放セカ",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "ミスラビ",
+    "zhTW": "ミスラビ",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "コイカク",
+    "zhTW": "コイカク",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "ガイアXmas2025ver.",
+    "zhTW": "ガイアXmas2025ver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "エミリーナース2026ver.",
+    "zhTW": "エミリーナース2026ver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "ティンカー・ベル花嫁2025ver",
+    "zhTW": "ティンカー・ベル花嫁2025ver",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "ヴェルメリオ -アディション-",
+    "zhTW": "ヴェルメリオ -アディション-",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "ジューチャオパジャマ2026ver.",
+    "zhTW": "ジューチャオパジャマ2026ver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "レリバニ",
+    "zhTW": "レリバニ",
+    "preserve": true,
+    "reason": "MAccessory 背景敘述直接引用的服裝／店名縮稱，保留來源名稱。"
+  },
+  {
+    "ja": "ドロシー ハロウィンメイドver.",
+    "zhTW": "ドロシー ハロウィンメイドver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "ドロシー-アディション-",
+    "zhTW": "ドロシー-アディション-",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "エミリー巫女ver.",
+    "zhTW": "エミリー巫女ver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "ヴェルメリオ ハロウィンメイドver.",
+    "zhTW": "ヴェルメリオ ハロウィンメイドver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "クレア ハロウィンメイドver.",
+    "zhTW": "クレア ハロウィンメイドver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "シンデレラ ハロウィンメイドver.",
+    "zhTW": "シンデレラ ハロウィンメイドver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "リル ハロウィンメイドver.",
+    "zhTW": "リル ハロウィンメイドver.",
+    "preserve": true,
+    "reason": "MAccessory 描述明確引用的 EX 技能、角色版本或服裝／店名；保留來源名稱以利對照，不保留一般敘述。"
+  },
+  {
+    "ja": "【ナ】",
+    "zhTW": "【ナ】",
+    "preserve": true,
+    "reason": "MAccessory 謎題的發言者識別標籤，須保留原字才能對照題目；發言內容已完整翻譯。"
+  },
+  {
+    "ja": "【ヌ】",
+    "zhTW": "【ヌ】",
+    "preserve": true,
+    "reason": "MAccessory 謎題的發言者識別標籤，須保留原字才能對照題目；發言內容已完整翻譯。"
+  },
+  {
+    "ja": "【ネ】",
+    "zhTW": "【ネ】",
+    "preserve": true,
+    "reason": "MAccessory 謎題的發言者識別標籤，須保留原字才能對照題目；發言內容已完整翻譯。"
+  },
+  {
+    "ja": "【ノ】",
+    "zhTW": "【ノ】",
+    "preserve": true,
+    "reason": "MAccessory 謎題的發言者識別標籤，須保留原字才能對照題目；發言內容已完整翻譯。"
+  }
+]

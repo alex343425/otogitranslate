@@ -1,0 +1,35 @@
+{
+  "site": "C:\\Users\\user\\Documents\\GitHub\\alex343425.github.io",
+  "output": "D:\\codex_test\\otogi_test\\skill_translation\\release\\site\\index_chs.html",
+  "main": {
+    "total": 6451,
+    "translated": 6451
+  },
+  "modal": {
+    "skill": {
+      "total": 6194,
+      "translated": 6194
+    },
+    "ls": {
+      "total": 1359,
+      "translated": 263
+    },
+    "wep": {
+      "total": 1196,
+      "translated": 1196
+    },
+    "acc": {
+      "total": 225,
+      "translated": 0
+    }
+  },
+  "uniqueTranslatedDescriptions": 7670,
+  "unchanged": [
+    "index.html",
+    "script.js",
+    "data.json",
+    "charjson/*",
+    "all styles, controls, names and filters"
+  ],
+  "notes": "Descriptions outside MSkills/MMutationSkills keep their original text when no approved translation exists."
+}

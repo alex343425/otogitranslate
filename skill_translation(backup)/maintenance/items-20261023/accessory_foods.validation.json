@@ -1,0 +1,45 @@
+{
+  "tasks": 3057,
+  "provided": 3057,
+  "sourceTables": [
+    "MAccessory",
+    "MFoods"
+  ],
+  "handTranslatedFoods": 67,
+  "fullManualEntries": 372,
+  "parentEntries": [
+    {
+      "batch": "parent",
+      "entries": 200
+    },
+    {
+      "batch": "parent2",
+      "entries": 183
+    },
+    {
+      "batch": "parent3",
+      "entries": 200
+    }
+  ],
+  "pairedNecklaces": 1358,
+  "glossaryAdditions": 2172,
+  "preservedNames": 1550,
+  "checks": [
+    "key-coverage",
+    "nonempty-target",
+    "placeholder-multiset",
+    "percent-sign-count",
+    "no-private-use-markers",
+    "no-unapproved-kana",
+    "no-unchanged-description",
+    "style-guide",
+    "no-existing-glossary-conflicts"
+  ],
+  "errors": [],
+  "sha256": {
+    "pending": "f1ff1dd9886622604fbfbe01ac02c7f055d27a86454cc9416c99d9ffc0583d25",
+    "translations": "7dff2cc3468f47503678d6a862ccd457cbca4d50561510d52ec0a5c0621c7f17",
+    "glossary": "1a1f610e041c42e18465ec47756168e345017594de88d115d11d13e126afc6ac",
+    "localNameSnapshot": "17a15fce48dff3bdd59e23536c0684cc357686f56cb7fa43f3e1e151906b9374"
+  }
+}

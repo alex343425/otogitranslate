@@ -1,0 +1,24 @@
+{
+  "environment": "v24.22.0",
+  "scope": "Local Node CPU reference only; excludes network, game/browser runtime, and table decompression/recompression",
+  "samples": [
+    {
+      "label": "before",
+      "bytes": 7376168,
+      "gzipBytes": 696972,
+      "templates": 14713,
+      "exact": 1264,
+      "medianParseMs": 6.94,
+      "medianValidateMs": 28.44
+    },
+    {
+      "label": "after",
+      "bytes": 9605490,
+      "gzipBytes": 1221206,
+      "templates": 24829,
+      "exact": 1264,
+      "medianParseMs": 9.76,
+      "medianValidateMs": 37.87
+    }
+  ]
+}

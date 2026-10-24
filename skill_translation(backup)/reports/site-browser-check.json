@@ -1,0 +1,36 @@
+{
+  "page": "C:/Users/user/Documents/GitHub/alex343425.github.io/index_chs.html",
+  "checks": [
+    {
+      "name": "Initial load",
+      "result": "6451 rows, Traditional Chinese descriptions, Japanese skill names and CT preserved"
+    },
+    {
+      "name": "Pagination",
+      "result": "Page 2 renders Traditional Chinese; 6451 total rows"
+    },
+    {
+      "name": "Japanese keyword compatibility",
+      "input": "光属性魔法攻撃",
+      "result": "99 rows; matches original data baseline"
+    },
+    {
+      "name": "Character details",
+      "result": "Skills render in Traditional Chinese; character and skill names preserved"
+    },
+    {
+      "name": "Reset",
+      "result": "6451 rows; Chinese descriptions remain"
+    },
+    {
+      "name": "Browser error logs",
+      "result": "No warnings or errors recorded during checks"
+    },
+    {
+      "name": "Existing website files",
+      "result": "git diff --exit-code passed; only index_chs.html is new"
+    }
+  ],
+  "screenshot": "site-preview.png",
+  "unverified": "Not deployed to GitHub Pages"
+}

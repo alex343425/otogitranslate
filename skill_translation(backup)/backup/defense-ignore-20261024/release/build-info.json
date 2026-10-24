@@ -1,0 +1,116 @@
+{
+  "builtAt": "2026-10-23T18:37:02.236Z",
+  "source": {
+    "MSkills": {
+      "file": "source/snapshots/850993049a6ce9793c2a0cee8df985804a7084862b038285e5973fdd17d2e1a3/MSkills.json",
+      "sha256": "850993049a6ce9793c2a0cee8df985804a7084862b038285e5973fdd17d2e1a3",
+      "count": 38352,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MSkills.json",
+      "lastModified": "Thu, 22 Oct 2026 02:41:43 GMT"
+    },
+    "MMutationSkills": {
+      "file": "source/snapshots/78e88f07d907baa742979fbdb776db5017d1d10300ff728a863038c65d8628e5/MMutationSkills.json",
+      "sha256": "78e88f07d907baa742979fbdb776db5017d1d10300ff728a863038c65d8628e5",
+      "count": 11705,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MMutationSkills.json",
+      "lastModified": "Thu, 22 Oct 2026 02:42:08 GMT"
+    },
+    "MMaterials": {
+      "file": "source/snapshots/21f073e105d8d04029fe600cfb2c1eb21d1d754742ba15379fc9c53481d4c213/MMaterials.json",
+      "sha256": "21f073e105d8d04029fe600cfb2c1eb21d1d754742ba15379fc9c53481d4c213",
+      "count": 3484,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MMaterials.json",
+      "lastModified": "Thu, 22 Oct 2026 02:40:29 GMT"
+    },
+    "MWeapons": {
+      "file": "source/snapshots/1f26c6e05e3f58b15df921bf496ee551573083be147b41ae48e40dcc6675b10a/MWeapons.json",
+      "sha256": "1f26c6e05e3f58b15df921bf496ee551573083be147b41ae48e40dcc6675b10a",
+      "count": 2509,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MWeapons.json",
+      "lastModified": "Thu, 22 Oct 2026 02:44:16 GMT"
+    },
+    "MAccessory": {
+      "file": "source/snapshots/4ca2742a19d6bd7387525add1128fb08b323132015ba6ed723aa27c47705752c/MAccessory.json",
+      "sha256": "4ca2742a19d6bd7387525add1128fb08b323132015ba6ed723aa27c47705752c",
+      "count": 3020,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MAccessory.json",
+      "lastModified": "Thu, 22 Oct 2026 02:40:28 GMT"
+    },
+    "MItems": {
+      "file": "source/snapshots/1b84580c3feef7f270944e0cc7e64f72a730f93eafcd5b20b7223205823641a2/MItems.json",
+      "sha256": "1b84580c3feef7f270944e0cc7e64f72a730f93eafcd5b20b7223205823641a2",
+      "count": 4365,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MItems.json",
+      "lastModified": "Thu, 22 Oct 2026 02:40:29 GMT"
+    },
+    "MFoods": {
+      "file": "source/snapshots/35cca99feacbb3a8c4c9846cb44d7693c7ed01031277932ac30864e05735e218/MFoods.json",
+      "sha256": "35cca99feacbb3a8c4c9846cb44d7693c7ed01031277932ac30864e05735e218",
+      "count": 811,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MFoods.json",
+      "lastModified": "Thu, 22 Oct 2026 02:40:28 GMT"
+    },
+    "MSkillMutationData": {
+      "file": "source/snapshots/113a9f1cc262ee82d72d19943909f350307d220186907cdadd95fcfed75d2d9c/MSkillMutationData.json",
+      "sha256": "113a9f1cc262ee82d72d19943909f350307d220186907cdadd95fcfed75d2d9c",
+      "count": 10236,
+      "url": "https://otogimigwestsp.blob.core.windows.net/prodassets/MasterData/MSkillMutationData.json",
+      "lastModified": "Thu, 22 Oct 2026 02:44:15 GMT"
+    }
+  },
+  "schemaVersion": 1,
+  "rows": 64246,
+  "uniqueDescriptions": 53024,
+  "translatedRows": 64226,
+  "retainedRows": 20,
+  "pending": 0,
+  "tables": {
+    "MSkills": {
+      "rows": 38352,
+      "translatedRows": 38333,
+      "retainedRows": 19,
+      "pendingRows": 0
+    },
+    "MMutationSkills": {
+      "rows": 11705,
+      "translatedRows": 11705,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MMaterials": {
+      "rows": 3484,
+      "translatedRows": 3484,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MWeapons": {
+      "rows": 2509,
+      "translatedRows": 2509,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MAccessory": {
+      "rows": 3020,
+      "translatedRows": 3020,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MItems": {
+      "rows": 4365,
+      "translatedRows": 4364,
+      "retainedRows": 1,
+      "pendingRows": 0
+    },
+    "MFoods": {
+      "rows": 811,
+      "translatedRows": 811,
+      "retainedRows": 0,
+      "pendingRows": 0
+    }
+  },
+  "errors": [],
+  "files": {
+    "Skills/skills.json": "53f039cffc9fe5334e458ab4a96ba45a5d72c0dabd41450eb36c77c164ee6fb0",
+    "Skills/skills_gb.json": "281ed8ef20501fe8f8e16f2d6108312f9dbde6d8a42b9348197e3639af26d774"
+  }
+}

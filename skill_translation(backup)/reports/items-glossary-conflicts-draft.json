@@ -1,0 +1,50 @@
+[
+  {
+    "group": "accessory_foods",
+    "ja": "デンデン",
+    "old": "デンデン",
+    "incoming": "蝸蝸",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  },
+  {
+    "group": "accessory_foods",
+    "ja": "オルスロー",
+    "old": "オルスロー",
+    "incoming": "奧爾斯洛",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  },
+  {
+    "group": "accessory_foods",
+    "ja": "オルプロト",
+    "old": "オルプロト",
+    "incoming": "奧爾普洛托",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  },
+  {
+    "group": "accessory_foods",
+    "ja": "オルマジック",
+    "old": "オルマジック",
+    "incoming": "奧爾瑪吉克",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  },
+  {
+    "group": "accessory_foods",
+    "ja": "オルリカバマジク",
+    "old": "オルリカバマジク",
+    "incoming": "奧爾莉卡巴瑪吉克",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  },
+  {
+    "group": "accessory_foods",
+    "ja": "ソザイン",
+    "old": "ソザイン",
+    "incoming": "素材因",
+    "oldPreserve": true,
+    "incomingPreserve": false
+  }
+]

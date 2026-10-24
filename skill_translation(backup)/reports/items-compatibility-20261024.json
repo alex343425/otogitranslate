@@ -1,0 +1,24 @@
+{
+  "skills.json": {
+    "oldKeys": 15977,
+    "addedKeys": 10116,
+    "differences": []
+  },
+  "skills_gb.json": {
+    "oldKeys": 15977,
+    "addedKeys": 10116,
+    "differences": []
+  },
+  "protected": [
+    {
+      "file": "skill_translation/release/site/index_chs.html",
+      "unchanged": true
+    },
+    {
+      "file": "C:/Users/user/Documents/GitHub/alex343425.github.io/index_chs.html",
+      "unchanged": true
+    }
+  ],
+  "exactUnchanged": true,
+  "pluginCopiesMatch": true
+}

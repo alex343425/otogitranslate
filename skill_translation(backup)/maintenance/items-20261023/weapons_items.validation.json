@@ -1,0 +1,14 @@
+{
+  "total": 3667,
+  "translated": 3667,
+  "sourceRows": 6856,
+  "glossary": 839,
+  "preserved": 51,
+  "retained": [
+    {
+      "source": "CP",
+      "reason": "MItems 原生識別縮寫 CP，來源本身不含待譯文字，依原縮寫保留。"
+    }
+  ],
+  "errors": []
+}

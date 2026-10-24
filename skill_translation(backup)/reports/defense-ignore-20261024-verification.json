@@ -1,0 +1,108 @@
+{
+  "releaseDiff": {
+    "skills.json": {
+      "templates": 136,
+      "exact": 12
+    },
+    "skills_gb.json": {
+      "templates": 136,
+      "exact": 12
+    }
+  },
+  "changedRows": {
+    "MSkills": 288,
+    "MAccessory": 13
+  },
+  "preservedFiles": 17,
+  "remaining": [
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "減防變體：防禦力減半",
+      "rows": 1
+    },
+    {
+      "category": "減防變體：防禦力減半",
+      "rows": 1
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 10
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 1
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 4
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "非減防：減益轉移／狀態異常抗性降低",
+      "rows": 5
+    },
+    {
+      "category": "減防變體：踩踏攻擊",
+      "rows": 1
+    }
+  ],
+  "validation": {
+    "rows": 64246,
+    "pending": 0,
+    "errors": []
+  },
+  "tests": {
+    "passed": 23,
+    "failed": 0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "rows": 64246,
+  "uniqueDescriptions": 53024,
+  "translatedRows": 64226,
+  "retainedRows": 20,
+  "pending": 0,
+  "tables": {
+    "MSkills": {
+      "rows": 38352,
+      "translatedRows": 38333,
+      "retainedRows": 19,
+      "pendingRows": 0
+    },
+    "MMutationSkills": {
+      "rows": 11705,
+      "translatedRows": 11705,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MMaterials": {
+      "rows": 3484,
+      "translatedRows": 3484,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MWeapons": {
+      "rows": 2509,
+      "translatedRows": 2509,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MAccessory": {
+      "rows": 3020,
+      "translatedRows": 3020,
+      "retainedRows": 0,
+      "pendingRows": 0
+    },
+    "MItems": {
+      "rows": 4365,
+      "translatedRows": 4364,
+      "retainedRows": 1,
+      "pendingRows": 0
+    },
+    "MFoods": {
+      "rows": 811,
+      "translatedRows": 811,
+      "retainedRows": 0,
+      "pendingRows": 0
+    }
+  },
+  "errors": []
+}

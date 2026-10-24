@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "changedEntries": {
+    "templates.zh-TW.json": 3088,
+    "exact.zh-TW.json": 330,
+    "glossary.json": 5
+  },
+  "matchedOccurrences": {
+    "回復魔力": 708,
+    "屬性敵人": 2151,
+    "八卦之陣": 260,
+    "萬能之印": 99,
+    "本（武器種類）": 154,
+    "金縛": 303,
+    "玩家經驗倍率": 77,
+    "CT增加速度倍率": 291
+  },
+  "scope": "Translation values and glossary only; original source keys, exception metadata and index_chs.html are untouched."
+}
