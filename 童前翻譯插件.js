@@ -430,6 +430,7 @@ function replaceUsingTranslation(data, translationDict) {
             data = data.replace(/%user_name/g, "人間さん");
             data = data.replace(/人間さん先生/g, "人間さん");
             data = data.replace(/人間さんさん/g, "人間さん");
+            data = data.replace(/人間さんくん/g, "人間くん");
             data = data.replace(/\\n/g, ' ');
         }
 
@@ -437,6 +438,15 @@ function replaceUsingTranslation(data, translationDict) {
         let result = data;
         if (typeof data === "string" && translationDict[data]) {
             result = translationDict[data]; // 取得譯文
+        } else if (typeof data === "string" && /[\r\n]/.test(data)) {
+            // 實際換行可能在匯出字典時被移除或轉成空白；精確匹配仍優先。
+            for (const separator of ["", " "]) {
+                const candidate = data.replace(/\r\n|\r|\n/g, separator);
+                if (Object.prototype.hasOwnProperty.call(translationDict, candidate)) {
+                    result = translationDict[candidate];
+                    break;
+                }
+            }
         } else if (Array.isArray(data)) {
             return data.map((item) => replaceUsingTranslation(item, translationDict));
         } else if (typeof data === "object" && data !== null) {
