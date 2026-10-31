@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         童话翻译V4
-// @version      1.6
+// @version      1.7
 // @run-at       document-start
 // @description  拦截指定路径的请求，修改内容并返回
 // @author       红凯
@@ -440,6 +440,14 @@ function replaceUsingTranslation(data, translationDict) {
         const named = data.replace(/%user_name/g, "人間さん");
         const legacy = named.replace(/人間さん先生/g, "人間さん").replace(/人間さんさん/g, "人間さん");
         const candidates = new Set([data, named, legacy, legacy.replace(/人間さんくん/g, "人間くん")]);
+        // 部分劇情字典以「人類さん」記錄主角；僅增加候選，不覆蓋原有精確匹配。
+        for (const alias of ["人類さん", "人类さん"]) {
+            const alternate = data.replace(/%user_name/g, alias);
+            const collapsed = alternate.replace(/(人類|人类)さん(?:先生|さん)/g, "$1さん");
+            candidates.add(alternate);
+            candidates.add(collapsed);
+            candidates.add(collapsed.replace(/(人類|人类)さんくん/g, "$1くん"));
+        }
         for (const text of [...candidates]) {
             const literalNewlines = text.replace(/\\r\\n|\\n|\\r/g, " ");
             for (const variant of [text, literalNewlines]) {
