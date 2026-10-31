@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         童话翻译V4
-// @version      1.5
+// @version      1.6
 // @run-at       document-start
 // @description  拦截指定路径的请求，修改内容并返回
 // @author       红凯
@@ -424,48 +424,42 @@ function createOtogiSkillCore() {
     }
 
 function replaceUsingTranslation(data, translationDict) {
-        // --- 第一階段：預處理 (為了匹配字典) ---
-        if (typeof data === "string") {
-            // 保留原始功能：將原文中的變數轉為特定稱呼以利字典比對
-            data = data.replace(/%user_name/g, "人間さん");
-            data = data.replace(/人間さん先生/g, "人間さん");
-            data = data.replace(/人間さんさん/g, "人間さん");
-            data = data.replace(/人間さんくん/g, "人間くん");
-            data = data.replace(/\\n/g, ' ');
+        if (Array.isArray(data)) {
+            return data.map(item => replaceUsingTranslation(item, translationDict));
         }
+        if (typeof data === "object" && data !== null) {
+            const translated = {};
+            for (const key of Object.keys(data)) {
+                translated[key] = replaceUsingTranslation(data[key], translationDict);
+            }
+            return translated;
+        }
+        if (typeof data !== "string") return data;
 
-        // --- 第二階段：執行翻譯比對 ---
-        let result = data;
-        if (typeof data === "string" && translationDict[data]) {
-            result = translationDict[data]; // 取得譯文
-        } else if (typeof data === "string" && /[\r\n]/.test(data)) {
-            // 實際換行可能在匯出字典時被移除或轉成空白；精確匹配仍優先。
-            for (const separator of ["", " "]) {
-                const candidate = data.replace(/\r\n|\r|\n/g, separator);
-                if (Object.prototype.hasOwnProperty.call(translationDict, candidate)) {
-                    result = translationDict[candidate];
-                    break;
+        // 精確原文優先；同時保留字典中的舊稱呼與新版簡化稱呼。
+        const named = data.replace(/%user_name/g, "人間さん");
+        const legacy = named.replace(/人間さん先生/g, "人間さん").replace(/人間さんさん/g, "人間さん");
+        const candidates = new Set([data, named, legacy, legacy.replace(/人間さんくん/g, "人間くん")]);
+        for (const text of [...candidates]) {
+            const literalNewlines = text.replace(/\\r\\n|\\n|\\r/g, " ");
+            for (const variant of [text, literalNewlines]) {
+                candidates.add(variant);
+                candidates.add(variant.trim());
+                // 不壓縮一般空白，避免不同句子被誤認為相同 key。
+                for (const separator of ["", " "]) {
+                    const joined = variant.replace(/\r\n|\r|\n/g, separator);
+                    candidates.add(joined);
+                    candidates.add(joined.trim());
                 }
             }
-        } else if (Array.isArray(data)) {
-            return data.map((item) => replaceUsingTranslation(item, translationDict));
-        } else if (typeof data === "object" && data !== null) {
-            const newData = {};
-            for (const key in data) {
-                newData[key] = replaceUsingTranslation(data[key], translationDict);
+        }
+        for (const candidate of candidates) {
+            if (Object.prototype.hasOwnProperty.call(translationDict, candidate)
+                && typeof translationDict[candidate] === "string" && translationDict[candidate].trim()) {
+                // 只處理成功匹配的譯文，未匹配內容維持原值。
+                return translationDict[candidate].replace(/人類君|人間君|人类君|人间君/g, "%user_name");
             }
-            return newData;
         }
-
-        // --- 第三階段：後處理 (確保遊戲內顯示變數) ---
-        // 在這裡把所有翻譯後的稱呼，全部替換回 %user_name
-        if (typeof result === "string") {
-            result = result.replace(/人類君/g, "%user_name");
-            result = result.replace(/人間君/g, "%user_name");
-            result = result.replace(/人类君/g, "%user_name");
-            result = result.replace(/人间君/g, "%user_name");
-        }
-
-        return result;
+        return data;
     }
 })();
