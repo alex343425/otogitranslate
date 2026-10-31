@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         童话翻译V4
-// @version      1.7
+// @version      1.8
 // @run-at       document-start
 // @description  拦截指定路径的请求，修改内容并返回
 // @author       红凯
@@ -450,7 +450,9 @@ function replaceUsingTranslation(data, translationDict) {
         }
         for (const text of [...candidates]) {
             const literalNewlines = text.replace(/\\r\\n|\\n|\\r/g, " ");
-            for (const variant of [text, literalNewlines]) {
+            // 沿用空格版本優先，另支援匯出字典直接刪除字面換行的 key。
+            const withoutLiteralNewlines = text.replace(/\\r\\n|\\n|\\r/g, "");
+            for (const variant of [text, literalNewlines, withoutLiteralNewlines]) {
                 candidates.add(variant);
                 candidates.add(variant.trim());
                 // 不壓縮一般空白，避免不同句子被誤認為相同 key。
