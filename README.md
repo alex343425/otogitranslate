@@ -60,6 +60,11 @@ const CharChinese = 0
 
 角色／精靈名稱翻譯使用同一份 `trans_dict.json`，不會隨 `SimplifiedChinese` 切換另一份字典。關閉 `CharChinese` 也不會關閉劇情 JSON 中的說話者名稱翻譯。
 
+## 安卓翻譯版
+Releases頁面提供安卓繁體/簡體APK
+若遊戲有更新，預計在當日維修完下午3:30前自動發布
+APK除了翻譯也有去除動態馬賽克的功能(無法消除素材自帶的馬賽克)
+
 ## 常見問題
 
 | 情況 | 檢查方式 |
